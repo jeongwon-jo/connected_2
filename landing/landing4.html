@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <!-- <script type="text/javascript" src="https://dev.connectedu.com/lib/dev/js/jquery.js"></script>
+  <script
+    type="text/javascript">window.PBVAR = { "home_url": "https:\/\/dev.connectedu.com\/", "locale_domain": "pbpress", "ajax_url": "https:\/\/dev.connectedu.com\/ajax", "fileupload_url": "https:\/\/dev.connectedu.com\/fileupload", "filebase_url": "https:\/\/s3.ap-northeast-2.amazonaws.com\/cdn.supremestudyabroadtool.com", "theme_domain": "connectedu", "is_user_logged_in": false, "user_login_url": "https:\/\/dev.connectedu.com\/login" };</script>
+  <script type="text/javascript" src="https://dev.connectedu.com/lib/dev/comp-lib/all-main.js"></script>
+
+  <script type="text/plain" id="pb-crypt-public-key">-----BEGIN PUBLIC KEY-----
+		MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuPYcc3xNRQ49mjAFfQ0V
+		mcW5aXBX7z6r5HMCnOBP8WiXCs3kCJqtrM2o2lXFKZukvsuI7QW7f6AWAmvL1sN/
+		Q5YoKs6V9qjsnLlt/2LAy/odOZ2H+7gNHF0wTEG9qEUmwvNeIEV+GFSQcoHY72I5
+		FLKdRMJeWoF7N8BAWGl99+PPXyscviH8jyGqNUGya+Dj2mW7z36FZ4mIE7l7hry0
+		PXfpLLOR6eMtTD8qcmXia2AugJAd0PzVWax8dG0FCH4OGkjsXaI+u+d3C5AA5c2V
+		KfsBT3VxYaqnK+BzTGjIQ5lRbGrkdMy9ujKVGr6dkykrurY5pXydbaKxLSLbKcy0
+		CwIDAQAB
+		-----END PUBLIC KEY-----
+	</script> -->
+
+  <script type="text/javascript" src="https://dev.connectedu.com/_pblang.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://dev.connectedu.com/_page_builder_compiled.css">
+  <link rel="stylesheet" type="text/css" href="https://dev.connectedu.com/lib/dev/css/page-builder/common.css?v=2">
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvHXb0hXEJwqfcSQlM7KMxqzrxCmazlPM&libraries=geometry,places"
+    defer></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    viewport-fit=cover' />
+  <link rel="apple-touch-icon" sizes="57x57"
+    href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60"
+    href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72"
+    href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76"
+    href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114"
+    href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120"
+    href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144"
+    href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152"
+    href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180"
+    href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"
+    href="https://dev.connectedu.com/themes/connected/img/icon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="https://dev.connectedu.com/themes/connected/img/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96"
+    href="https://dev.connectedu.com/themes/connected/img/icon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16"
+    href="https://dev.connectedu.com/themes/connected/img/icon/favicon-16x16.png">
+  <link rel="stylesheet" type="text/css"
+    href="https://dev.connectedu.com/themes/connected/lib/dev/css/pb-main.css?v=1.0.0_debug_1Sabk">
+  <script type="text/javascript"
+    src="https://dev.connectedu.com/themes/connected/lib/dev/comp-lib/all.js?v=1.0.0_debug_1Sabk"></script>
+  <script type="text/javascript" src="https://dev.connectedu.com/themes/connected/lib/dev/js/pb-dev.js"></script>
+  <title>커넥티드</title>
+  <!-- jQuery CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <!-- DateTimePicker -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- Star -->
+  <link rel="stylesheet" href="../js/star/star-rating-svg.css">
+  <script src="../js/star/jquery.star-rating-svg.js"></script>
+  <!-- AOS CSS & JS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- NiceSelect -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <!-- gsap & TWEENMAX -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+
+  <!-- Custom CSS & JS -->
+  <link rel="stylesheet" href="../css/common2.css">
+  <link rel="stylesheet" href="../css/landing3.css">
+  <script src="../js/common2.js" defer></script>
+  <meta name="title" content="커넥티드">
+  <meta name="keywords" content="">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="Korean">
+
+  <!-- Search Engine -->
+  <meta name="description" content="커넥티드">
+  <meta name="image" content="https://dev.connectedu.com/themes/connected/img/og.jpg">
+  <!-- Schema.org for Google -->
+  <meta itemprop="name" content="커넥티드">
+  <meta itemprop="description" content="커넥티드">
+
+  <meta itemprop="image" content="https://dev.connectedu.com/themes/connected/img/og.jpg">
+  <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+  <meta property="og:title" content="커넥티드">
+  <meta property="og:description" content="커넥티드">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.connectedu.com/themes/connected/img/og_new.png">
+  <meta property="og:url" content="https://dev.connectedu.com/">
+  <meta property="og:site_name" content="커넥티드">
+  <meta name="facebook-domain-verification" content="ceg8hozu78orpcw7kul1sdm6812f9u" />
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WJR8W6Q');</script>
+  <!-- End Google Tag Manager -->
+  <!-- naver-site-verification -->
+  <meta name="naver-site-verification" content="0484b9a899fa8076d2db02d74a9238e6f52dfea2" />
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '192964157157918');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=192964157157918&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!-- Channel Plugin Scripts -->
+  <script>
+    (function () {
+      var w = window;
+      if (w.ChannelIO) {
+        return (window.console.error || window.console.log || function () { })('ChannelIO script included twice.');
+      }
+      var ch = function () {
+        ch.c(arguments);
+      };
+      ch.q = [];
+      ch.c = function (args) {
+        ch.q.push(args);
+      };
+      w.ChannelIO = ch;
+      function l() {
+        if (w.ChannelIOInitialized) {
+          return;
+        }
+        w.ChannelIOInitialized = true;
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+        s.charset = 'UTF-8';
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+      }
+      if (document.readyState === 'complete') {
+        l();
+      } else if (window.attachEvent) {
+        window.attachEvent('onload', l);
+      } else {
+        window.addEventListener('DOMContentLoaded', l, false);
+        window.addEventListener('load', l, false);
+      }
+    })();
+    /*
+    ChannelIO('boot', {
+      "pluginKey": "378cf6f4-3169-4a37-a85e-2e8b36cdab6a"
+    });
+    */
+  </script>
+  <!-- End Channel Plugin -->
+
+  <!-- nam [s] -->
+  <style>
+    #pb-pc-submenu-list li:first-child {
+      display: none;
+    }
+
+    #pb-mobile-menu-panel>.menu-list>li:last-child {
+      display: none;
+    }
+
+    #pb-pc-submenu-list>li.locale-link:hover .submenu-group,
+    #pb-pc-submenu-list>li>.submenu-group>.submenu-list>li.change-locale-menu,
+    #pb-pc-submenu-list>li>.submenu-group>.submenu-list>li.change-locale-menu li {
+      display: block !important;
+      opacity: 1;
+    }
+
+    @media screen and (max-width: 767px) {
+      #pb-mobile-menu-panel {
+        padding-bottom: 140px;
+      }
+
+      .locale-selector.mobile {
+        width: 120px;
+        margin: 0 auto;
+      }
+    }
+  </style>
+  <!-- nam [e] -->
+
+</head>
+
+<body class="" oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+
+  <div id="wrap" class="main">
+    <header>
+      <div class="header__inner">
+        <div class="hd__top">
+          <div class="hd-search">
+            <a href="/" class="logo">
+              <img src="../img/common/logo.png" alt="커넥티드 로고">
+            </a>
+            <form action="" class="form_hd-search">
+              <fieldset>
+                <div class="search">
+                  <input type="text" placeholder="검색어를 입력하세요.">
+                  <button type="button" class="btn_search"></button>
+                </div>
+              </fieldset>
+            </form>
+            <button type="button" class="mo-icon_menu"></button>
+          </div>
+          <div class="hd-language">
+            <ul class="hd-navigation">
+              <li>
+                <div class="setting-lang">
+                  <span class="current">KOR</span>
+                  <button type="button" class="btn_open"></button>
+                  <ul class="lang_list">
+                    <li>KOR</li>
+                    <li>ENG</li>
+                    <li>CN</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="hd__bottom">
+          <div class="hd_category_gnb">
+            <div class="category">
+              <div class="category_icon">
+                <span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <p>전체 카테고리</p>
+              <button type="button" class="btn_open"></button>
+            </div>
+            <nav id="gnb">
+              <ul>
+                <!-- 해당 메뉴 접근시 li에 active 클래스 추가 -->
+                <li><a href="./school/school_home.html">학교</a></li>
+                <li><a href="./school/online_home.html">온라인학교</a></li>
+                <li><a href="./activity/short_home.html">단기활동</a></li>
+                <li><a href="./activity/online_home.html">온라인 단기활동</a></li>
+                <li><a href="./magazine/list.html">매거진</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="hd_login">
+            <!-- 비로그인 환경 -->
+            <!-- <a href="/login.html" class="btn_login">로그인</a>
+	                <a href="#" class="btn-smType btn-round btn_signup">회원가입</a> -->
+            <!-- 로그인 환경 -->
+            <div class="hd_mypage">
+              <button type="button" class="btn-smType btn-round btn_mypage">마이페이지</button>
+              <ul class="mypage_list">
+                <li><a href="#" class="my_info">계정 정보</a></li>
+                <li><a href="#" class="my_noti">알림</a></li>
+                <li><a href="#" class="my_like">관심리스트</a></li>
+                <li><a href="#" class="my_portfolio">포트폴리오</a></li>
+                <li><a href="#" class="my_payment">결제내역</a></li>
+                <li><a href="#" class="my_aplc">지원서 리스트</a></li>
+                <li><a href="#" class="logout">로그아웃</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 전체 카테고리 -->
+      <div id="hd_category">
+        <div class="category__inner">
+          <ul class="category">
+            <li>
+              <span class="category_nm">학교</span>
+              <ul class="category_sub">
+                <li>
+                  <a href="#" class="category_nm">미국</a>
+                  <ul class="category_sub">
+                    <li><a href="#" class="category_nm">미국</a></li>
+                    <li><a href="#" class="category_nm">영국</a></li>
+                    <li><a href="#" class="category_nm">캐나다</a></li>
+                  </ul>
+                </li>
+                <li><a href="#" class="category_nm">영국</a></li>
+                <li><a href="#" class="category_nm">캐나다</a></li>
+              </ul>
+            </li>
+            <li><span class="category_nm">온라인학교</span>
+              <ul class="category_sub">
+                <li>
+                  <a href="#" class="category_nm">미국1</a>
+                  <ul class="category_sub">
+                    <li><a href="#" class="category_nm">미국</a></li>
+                    <li><a href="#" class="category_nm">영국</a></li>
+                    <li><a href="#" class="category_nm">캐나다</a></li>
+                  </ul>
+                </li>
+                <li><a href="#" class="category_nm">영국</a></li>
+                <li><a href="#" class="category_nm">캐나다</a></li>
+              </ul>
+            </li>
+            <li><span class="category_nm">단기활동</span>
+              <ul class="category_sub">
+                <li>
+                  <a href="#" class="category_nm">미국2</a>
+                  <ul class="category_sub">
+                    <li><a href="#" class="category_nm">미국</a></li>
+                    <li><a href="#" class="category_nm">영국</a></li>
+                    <li><a href="#" class="category_nm">캐나다</a></li>
+                  </ul>
+                </li>
+                <li><a href="#" class="category_nm">영국</a></li>
+                <li><a href="#" class="category_nm">캐나다</a></li>
+              </ul>
+            </li>
+            <li><span class="category_nm">온라인 단기활동</span></li>
+            <li><span class="category_nm">매거진</span></li>
+          </ul>
+        </div>
+      </div>
+      <!-- 모바일 햄버거 버튼 클릭 메뉴 -->
+      <div class="mobile_gnb">
+        <div class="mobile_gnb__inner">
+          <div class="mobile_gnb__header">
+            <div class="logo">
+              <img src="./img/common/logo.png" alt="로고">
+            </div>
+            <button type="button" class="btn_close"></button>
+          </div>
+          <div class="mobile_gnb__content">
+            <!-- 로그인 전 로그인 유도 -->
+            <div class="m_gnb-login">
+              <span>
+                로그인 하시고<br>
+                더 자세한 정보를 확인하세요!
+              </span>
+              <a href="/login.html" class="btn_login">로그인</a>
+            </div>
+            <ul class="m-gnb">
+              <!-- 로그인 후 마이페이지 노출 -->
+              <li>
+                <button type="button" class="a_menu mypage">마이페이지</button>
+              </li>
+              <!-- 1뎁스 -->
+              <li>
+                <button type="button" class="a_menu a_gnb">학교</button>
+                <!-- 2뎁스 -->
+                <div class="mobile_submenu">
+                  <div class="gnb_submenu__inner">
+                    <div class="gnb_submenu__hd">
+                      <button type="button" class="btn_revert"></button><a href="./school/school_home.html">학교 홈</a>
+                    </div>
+                    <ul class="gnb_submenu__menu">
+                      <li>
+                        <button type="button" class="a_menu a_gnb">미국</button>
+                        <!-- 3뎁스 -->
+                        <div class="mobile_submenu">
+                          <div class="gnb_submenu__inner">
+                            <div class="gnb_submenu__hd">
+                              <button type="button" class="btn_revert"></button><a href="" class="menu_nm"></a>
+                            </div>
+                            <ul class="gnb_submenu__menu">
+                              <li><button type="button" class="a_menu a_gnb">미국1</button></li>
+                              <li><button type="button" class="a_menu a_gnb">미국2</button></li>
+                              <li><button type="button" class="a_menu a_gnb">미국3</button></li>
+                              <li><button type="button" class="a_menu a_gnb">미국4</button></li>
+                              <li><button type="button" class="a_menu a_gnb">미국5</button></li>
+                              <li><button type="button" class="a_menu a_gnb">미국6</button></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <button type="button" class="a_menu a_gnb">영국</button>
+                        <!-- 3뎁스 -->
+                        <div class="mobile_submenu">
+                          <div class="gnb_submenu__inner">
+                            <div class="gnb_submenu__hd">
+                              <button type="button" class="btn_revert"></button><a href="" class="menu_nm"></a>
+                            </div>
+                            <ul class="gnb_submenu__menu">
+                              <li><button type="button" class="a_menu a_gnb">영국1</button></li>
+                              <li><button type="button" class="a_menu a_gnb">영국2</button></li>
+                              <li><button type="button" class="a_menu a_gnb">영국3</button></li>
+                              <li><button type="button" class="a_menu a_gnb">영국4</button></li>
+                              <li><button type="button" class="a_menu a_gnb">영국5</button></li>
+                              <li><button type="button" class="a_menu a_gnb">영국6</button></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li><button type="button" class="a_menu a_gnb">캐나다</button></li>
+                      <li><button type="button" class="a_menu a_gnb">미국</button></li>
+                      <li><button type="button" class="a_menu a_gnb">영국</button></li>
+                      <li><button type="button" class="a_menu a_gnb">캐나다</button></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <button type="button" data-key="gnb2" data-level="1" class="a_menu a_gnb">온라인학교</button>
+              </li>
+              <li>
+                <button type="button" data-key="gnb3" data-level="1" class="a_menu a_gnb">단기활동</button>
+              </li>
+              <li>
+                <button type="button" data-key="gnb4" data-level="1" class="a_menu a_gnb">온라인 단기활동</button>
+              </li>
+              <li>
+                <button type="button" data-key="gnb5" data-level="1" class="a_menu a_gnb">매거진</button>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile_gnb__mypage">
+            <div class="gnb_mypage__inner">
+              <button type="button" class="btn_revert">전체</button>
+              <ul class="mypage__menu">
+                <li><a href="#" class="my_info">계정 정보</a></li>
+                <li><a href="#" class="my_noti">알림</a></li>
+                <li><a href="#" class="my_like">관심리스트</a></li>
+                <li><a href="#" class="my_portfolio">포트폴리오</a></li>
+                <li><a href="#" class="my_payment">결제내역</a></li>
+                <li><a href="#" class="my_aplc">지원서 리스트</a></li>
+                <li><a href="#" class="logout">로그아웃</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <link rel="stylesheet" href="/html/css/fonts.css?20231016100026">
+    <link rel="stylesheet" href="/html/css/style.css?20231016100026">
+    <script src="/html/js/js.js?20231016100026"></script>
+
+    <main>
+      <div class="landing__inner">
+        <section id="section1" class="section1">
+          <div class="bg"></div>
+          <div class="sec__inner">
+            <div class="sec1_container">
+              <div class="title">
+                <h3>#누구나 #언제나 #어디서나</h3>
+                <h1>나만의 해외교육 찾기</h1>
+                <h2>커넥티드에서 투명하고 편리하게</h2>
+              </div>
+              <div class="sec1_phone">
+                <img src="../img/landing/landing1_sec1_phone.png" alt="">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="section2" class="section2">
+          <div class="sec__inner">
+            <div class="title">
+              <h1 data-aos="fade-up" data-aos-offset="100" data-aos-duration="1000">정보의 비대칭이 당연했던 해외교육</h1>
+              <p data-aos="fade-up" data-aos-delay="200" data-aos-offset="100" data-aos-duration="1000">
+                우리는 해외교육을 알아볼 때 가장 먼저 떠올리는 곳이 있습니다.<br>
+                그런데 막상 그곳에 가면 추천해 주는 해외교육 개수도 한정적이고,<br>
+                명목이 명확하지 않은 비용을 지출하느라 너무 비싸죠.
+              </p>
+            </div>
+            <div class="content" data-aos="fade-up" data-aos-delay="400" data-aos-offset="100" data-aos-duration="1000">
+              <img src="../img/landing/landing1_sec2_img.png" alt="">
+            </div>
+          </div>
+        </section>
+        <section id="section3" class="section3">
+          <div class="sec__inner">
+            <div class="content">
+              <div class="title_box">
+                <h1>요즘 시대에 불투명한 정보는 당연하지 않아요</h1>
+                <div id="animation1" class="animation_icon"></div>
+              </div>
+              <div class="title_box">
+                <h1>이제 모든 해외교육 정보를</h1>
+                <div class="animation_icon">
+                  <img src="../img/landing/landing1_sec3_icon1.svg" alt="">
+                </div>
+                <h1>투명하게</h1>
+              </div>
+              <div class="title_box">
+                <h1>한 곳에서 비교하고 편리하게</h1>
+                <div class="animation_icon">
+                  <img src="../img/landing/landing1_sec3_icon2.svg" alt="">
+                </div>
+                <h1>지원하세요</h1>
+              </div>
+              <div class="title_box">
+                <h1>유학원 대비 30%</h1>
+                <div class="animation_icon">
+                  <img src="../img/landing/landing1_sec3_icon3.svg" alt="">
+                </div>
+                <h1>저렴한 해외교육 서비스</h1>
+              </div>
+              <div class="title_box">
+                <h1>커넥티드가 이렇게 만들어 봤어요</h1>
+                <div id="animation2" class="animation_icon"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="section4" class="section4">
+          <div class="sec__inner">
+            <div class="sec4_list">
+              <div class="sec4_item">
+                <div class="text">
+                  <h2>
+                    쇼핑 하듯 쉬운<br>
+                    해외교육 찾아보기
+                  </h2>
+                  <p>커넥티드는 모든 해외교육 정보를 보고 비교할 수 있는 서비스를 만들었어요.<br>
+                    더이상 발품 팔아 여러 곳을 찾아다니지 마세요.</p>
+                </div>
+                <div class="img">
+                  <img src="../img/landing/landing1_sec3_img01.png" alt="">
+                </div>
+              </div>
+              <div class="sec4_item">
+                <div class="img">
+                  <img src="../img/landing/landing1_sec3_img02.png" alt="">
+                </div>
+                <div class="text">
+                  <h2>
+                    우리 아이에게<br>
+                    딱 맞는지 모르겠다면
+                  </h2>
+                  <p>AI와 전문가의 도움을 받아보세요.<br>
+                    해외교육 선정부터 지원까지 직접 하실 수 있도록 도와드려요.</p>
+                </div>
+              </div>
+              <div class="sec4_item">
+                <div class="text">
+                  <h2>
+                    해외교육,<br>
+                    더 간편할 순 없을까?
+                  </h2>
+                  <p>커넥티드에서는 지원서도 직접 작성하고 교육기관에 제출할 수 있습니다.<br>
+                    작성한 지원서는 무료로 검토도 받을 수 있어요.</p>
+                </div>
+                <div class="img">
+                  <img src="../img/landing/landing1_sec3_img03.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="sec4_text">
+              <h1>
+                이제껏 경험 못 했던 투명하고 편리한<br class="mo_show"> 해외교육 서비스,
+                <span>커넥티드와 함께라면 가능해요!</span>
+              </h1>
+            </div>
+          </div>
+        </section>
+        <section id="section5" class="section5">
+          <div class="bg"></div>
+          <div class="sec__inner">
+            <div id="sec5_animate" class="sec5_box">
+              <div class="sec5_header">
+                <span class="num">01</span>
+                <div class="title">
+                  <p>해외 학교부터 E.C, 경시대회, 영어캠프 정보까지, 커넥티드 한 곳만 보세요!</p>
+                  <h1>전문가가 선별한 약 5,700개의 교육 정보를 모아놨어요</h1>
+                </div>
+                <div class="bubble">
+                  <span>검색 포털에서 직접 찾기 어려운 정보도 볼 수 있어요</span>
+                </div>
+              </div>
+              <div class="sec5_content">
+                <div class="scroll_edu_info">
+                  <div class="info__inner">
+                    <div class="thum_img">
+                      <div class="phone">
+                        <img src="../img/landing/landing1_sec5_phone_img1.png" alt="" class="pc_show">
+                        <img src="../img/landing/landing1_sec5_phone_img1_mo.png" alt="" class="mo_show">
+                      </div>
+                    </div>
+                    <div class="desc">
+                      <p>
+                        미국, 캐나다, 영국, 호주 등
+                        교육선진국의 교육을 직접 정규유학
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sec5_box">
+              <div class="sec5_header">
+                <span class="num">02</span>
+                <div class="title">
+                  <p>우리 아이에게 딱 맞는 학교찾기, 3분만 투자해 보세요!</p>
+                  <h1>AI 맞춤학교찾기 기능을 제공해요</h1>
+                </div>
+                <div class="emphasis_text">
+                  <p>서비스 이용료 =</p>
+                  <span class="emphasis">0원</span>
+                </div>
+              </div>
+              <div class="sec5_content">
+                <div class="sec5_video" style="background-color: #F1F1F1;"></div>
+              </div>
+            </div>
+            <div class="sec5_box">
+              <div class="sec5_header">
+                <span class="num">03</span>
+                <div class="title">
+                  <p>지원서는 커넥티드가 검토해 드려요</p>
+                  <h1>교육기관에 다이렉트로 지원서를 제출할 수 있어요</h1>
+                </div>
+                <div class="emphasis_text">
+                  <p>베이직 플랜 서비스 이용료 =</p>
+                  <span class="emphasis">0원</span>
+                </div>
+              </div>
+              <div class="sec5_content">
+                <div class="plan_service_list">
+                  <div class="plan_service">
+                    <div class="img">
+                      <img src="../img/landing/landing1_sec3_plan01.png" alt="">
+                    </div>
+                    <div class="desc">
+                      <span class="step">STEP.1</span>
+                      <h3 class="step_title">프로필 및 에세이 작성</h3>
+                      <p>학생, 학부모님 프로필, 그리고 에세이를 작성해요</p>
+                    </div>
+                  </div>
+                  <div class="plan_service">
+                    <div class="img">
+                      <img src="../img/landing/landing1_sec3_plan02.png" alt="">
+                    </div>
+                    <div class="desc">
+                      <span class="step">STEP.2</span>
+                      <h3 class="step_title">커넥티드 지원서 검토</h3>
+                      <p>커넥티드에 제출한 지원서는 담당 전문가 선생님이 무료로 검토해 줘요</p>
+                    </div>
+                  </div>
+                  <div class="plan_service">
+                    <div class="img">
+                      <img src="../img/landing/landing1_sec3_plan03.png" alt="">
+                    </div>
+                    <div class="desc">
+                      <span class="step">STEP.3</span>
+                      <h3 class="step_title">지원서 제출</h3>
+                      <p>검토가 완료된 지원서는 해외 교육기관에 제출돼요</p>
+                    </div>
+                  </div>
+                  <div class="plan_service">
+                    <div class="img">
+                      <img src="../img/landing/landing1_sec3_plan04.png" alt="">
+                    </div>
+                    <div class="desc">
+                      <span class="step">STEP.4</span>
+                      <h3 class="step_title">최종 결과 확인</h3>
+                      <p>커넥티드 마이페이지에서 최종 결과를 확인할 수 있어요!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sec5_box">
+              <div class="sec5_header">
+                <span class="num">04</span>
+                <div class="title">
+                  <p>One-Stop 서비스라는 명목 하에 필요 없는 서비스도 함께 결제하셨나요?</p>
+                  <h1>원하는 서비스만 골라서 받아볼 수 있어요</h1>
+                </div>
+              </div>
+              <div class="sec5_content">
+                <div class="smart_plan_list">
+                  <div class="smart_plan">
+                    <div class="thum">
+                      <img src="../img/landing/landing1_sec3_smart01.png" alt="">
+                    </div>
+                    <p>비자</p>
+                  </div>
+                  <div class="smart_plan">
+                    <div class="thum">
+                      <img src="../img/landing/landing1_sec3_smart02.png" alt="">
+                    </div>
+                    <p>항공권</p>
+                  </div>
+                  <div class="smart_plan">
+                    <div class="thum">
+                      <img src="../img/landing/landing1_sec3_smart03.png" alt="">
+                    </div>
+                    <p>보험</p>
+                  </div>
+                  <div class="smart_plan">
+                    <div class="thum">
+                      <img src="../img/landing/landing1_sec3_smart04.png" alt="">
+                    </div>
+                    <p>홈스테이</p>
+                  </div>
+                  <div class="smart_plan">
+                    <div class="thum">
+                      <img src="../img/landing/landing1_sec3_smart05.png" alt="">
+                    </div>
+                    <p>가디언</p>
+                  </div>
+                  <div class="smart_plan">
+                    <div class="thum">
+                      <img src="../img/landing/landing1_sec3_smart06.png" alt="">
+                    </div>
+                    <p>학습관리</p>
+                  </div>
+                </div>
+                <p class="info_text">
+                  이용료는 서비스별로 상이하오니 커넥티드에 문의해 주세요
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="section6" class="section6">
+          <div class="bg1">
+            <img src="../img/landing/landing1_sec6_bg.png" alt="">
+          </div>
+          <div class="bg2">
+            <img src="../img/landing/landing1_sec6_bg.png" alt="">
+          </div>
+          <div class="sec__inner">
+            <div class="title">
+              <p>해외유학 준비한다면 필수 구독!</p>
+              <h2>커넥티드 뉴스레터</h2>
+            </div>
+            <div class="swiper_wrap">
+              <div class="section6_newsletter">
+                <div class="news_letter_item">
+                  <img src="../img/landing/news01.png" alt="">
+                </div>
+                <div class="news_letter_item">
+                  <img src="../img/landing/news02.png" alt="">
+                </div>
+                <div class="news_letter_item">
+                  <img src="../img/landing/news03.png" alt="">
+                </div>
+                <div class="news_letter_item">
+                  <img src="../img/landing/news04.png" alt="">
+                </div>
+                <div class="news_letter_item">
+                  <img src="../img/landing/news05.png" alt="">
+                </div>
+                <div class="news_letter_item">
+                  <img src="../img/landing/news06.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="info">
+              <ul>
+                <li>2024년 7월 기준으로 작성됐습니다.</li>
+                <li>매달 최신 소식을 발송해 드립니다.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section id="section7" class="section7">
+          <div class="sec__inner">
+            <div class="sec7_use_people">
+              <div class="title">
+                <p><span>커넥티드</span>는 이런 분들이 사용해요!</p>
+                <h1>이미 <span>00,000</span>명이 사용 중이에요!</h1>
+              </div>
+              <ul class="people_special">
+                <li><span>1</span>고액의 컨설팅, 중개비용 없이 스스로 유학을 설계하고 싶으신 분</li>
+                <li><span>2</span>신뢰할 수 있는 정보만 찾아보고 싶으신 분</li>
+                <li><span>3</span>대부분 스스로 해결이 가능해서 필요한 도움만 받고 싶으신 분</li>
+                <li><span>4</span>여기저기 산재되어 있는 해외교육 정보를 한 곳에서 알아보고 싶으신 분</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section id="section8" class="section8">
+          <div class="sec__inner">
+            <div class="title">
+              <img src="../img/landing/landing1_sec8_review.png" alt="">
+              <span>많은 분들이 만족 하셨어요!</span>
+              <h1>사용자 만족 후기</h1>
+            </div>
+            <div class="swiper sec8_swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="review_card">
+                    <div class="review_reg_user">
+                      <div class="thum">
+                        <img src="../img/landing/review_thum.png" alt="">
+                      </div>
+                      <div class="desc">
+                        <div class="stars">
+                          <div class="star"></div>
+                          <div class="star"></div>
+                          <div class="star"></div>
+                          <div class="star"></div>
+                        </div>
+                        <p class="reg_nm">-커넥** 님</p>
+                      </div>
+                    </div>
+                    <div class="review_cnts">
+                      <p>
+                        커넥티드를 이용하고 유학에 대한 고민이 해결되었어요!! 감사합니다~커넥티드를 이용하고 유학에 대한 고민이 해결되었어요!! 감사합니다~커넥티드를 이용하고 유학에 대한 고민이
+                        해결되었어요!!
+                        감사합니다~감사합니다~
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="review_card">
+                    <div class="review_reg_user">
+                      <div class="thum">
+                        <img src="../img/landing/review_thum.png" alt="">
+                      </div>
+                      <div class="desc">
+                        <div class="stars">
+                          <div class="star"></div>
+                          <div class="star"></div>
+                          <div class="star"></div>
+                          <div class="star"></div>
+                        </div>
+                        <p class="reg_nm">-커넥** 님</p>
+                      </div>
+                    </div>
+                    <div class="review_cnts">
+                      <p>
+                        커넥티드를 이용하고 유학에 대한 고민이 해결되었어요!! 감사합니다~커넥티드를 이용하고 유학에 대한 고민이 해결되었어요!! 감사합니다~커넥티드를 이용하고 유학에 대한 고민이
+                        해결되었어요!!
+                        감사합니다~감사합니다~
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="review_card">
+                    <div class="review_reg_user">
+                      <div class="thum">
+                        <img src="../img/landing/review_thum.png" alt="">
+                      </div>
+                      <div class="desc">
+                        <div class="stars">
+                          <div class="star"></div>
+                          <div class="star"></div>
+                          <div class="star"></div>
+                          <div class="star"></div>
+                        </div>
+                        <p class="reg_nm">-커넥** 님</p>
+                      </div>
+                    </div>
+                    <div class="review_cnts">
+                      <p>
+                        커넥티드를 이용하고 유학에 대한 고민이 해결되었어요!! 감사합니다~커넥티드를 이용하고 유학에 대한 고민이 해결되었어요!! 감사합니다~커넥티드를 이용하고 유학에 대한 고민이
+                        해결되었어요!!
+                        감사합니다~감사합니다~
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper_bottom">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="section9" class="section9">
+          <div class="sec__inner">
+            <div class="title">
+              <span>많은 분들이 질문해 주셨어요</span>
+              <h1>자주 묻는 질문</h1>
+            </div>
+            <div class="faq_list">
+              <div class="faq_item">
+                <div class="faq_quest">
+                  <div class="faq__inner">
+                    <div class="icon"></div>
+                    <h3>커넥티드를 사용하면 좋은점이 뭔가요?</h3>
+                  </div>
+                </div>
+                <div class="faq_answer">
+                  <div class="faq__inner">
+                    <div class="icon"></div>
+                    <p>
+                      우리는 다양성에 대해 자랑스러워하며 모든 학습자와 배경의 요구를 충족시키기 위해 다양한 교육 프로그램과 서비스에 반영됩니다. 우리의 학습자는 끊임없이 변화하는 세계화 된
+                      세계에서 성공하는 데
+                      필요한 기술을 보다
+                      잘
+                      이해하고 파악하는 동시에 성공을 거둘 수 있습니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="faq_item">
+                <div class="faq_quest">
+                  <div class="faq__inner">
+                    <div class="icon"></div>
+                    <h3>커넥티드를 사용하면 좋은점이 뭔가요?</h3>
+                  </div>
+                </div>
+                <div class="faq_answer">
+                  <div class="faq__inner">
+                    <div class="icon"></div>
+                    <p>
+                      우리는 다양성에 대해 자랑스러워하며 모든 학습자와 배경의 요구를 충족시키기 위해 다양한 교육 프로그램과 서비스에 반영됩니다. 우리의 학습자는 끊임없이 변화하는 세계화 된
+                      세계에서 성공하는 데
+                      필요한 기술을 보다
+                      잘
+                      이해하고 파악하는 동시에 성공을 거둘 수 있습니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="faq_item">
+                <div class="faq_quest">
+                  <div class="faq__inner">
+                    <div class="icon"></div>
+                    <h3>커넥티드를 사용하면 좋은점이 뭔가요?</h3>
+                  </div>
+                </div>
+                <div class="faq_answer">
+                  <div class="faq__inner">
+                    <div class="icon"></div>
+                    <p>
+                      우리는 다양성에 대해 자랑스러워하며 모든 학습자와 배경의 요구를 충족시키기 위해 다양한 교육 프로그램과 서비스에 반영됩니다. 우리의 학습자는 끊임없이 변화하는 세계화 된
+                      세계에서 성공하는 데
+                      필요한 기술을 보다
+                      잘
+                      이해하고 파악하는 동시에 성공을 거둘 수 있습니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="faq_item">
+                <div class="faq_quest">
+                  <div class="faq__inner">
+                    <div class="icon"></div>
+                    <h3>커넥티드를 사용하면 좋은점이 뭔가요?</h3>
+                  </div>
+                </div>
+                <div class="faq_answer">
+                  <div class="faq__inner">
+                    <div class="icon"></div>
+                    <p>
+                      우리는 다양성에 대해 자랑스러워하며 모든 학습자와 배경의 요구를 충족시키기 위해 다양한 교육 프로그램과 서비스에 반영됩니다. 우리의 학습자는 끊임없이 변화하는 세계화 된
+                      세계에서 성공하는 데
+                      필요한 기술을 보다
+                      잘
+                      이해하고 파악하는 동시에 성공을 거둘 수 있습니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="faq_item">
+                <div class="faq_quest">
+                  <div class="faq__inner">
+                    <div class="icon"></div>
+                    <h3>커넥티드를 사용하면 좋은점이 뭔가요?</h3>
+                  </div>
+                </div>
+                <div class="faq_answer">
+                  <div class="faq__inner">
+                    <div class="icon"></div>
+                    <p>
+                      우리는 다양성에 대해 자랑스러워하며 모든 학습자와 배경의 요구를 충족시키기 위해 다양한 교육 프로그램과 서비스에 반영됩니다. 우리의 학습자는 끊임없이 변화하는 세계화 된
+                      세계에서 성공하는 데
+                      필요한 기술을 보다 잘 이해하고 파악하는 동시에 성공을 거둘 수 있습니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="section10" class="section10 fixed">
+          <div class="sec__inner">
+            <div class="sec10_container">
+              <div class="sec10_text">
+                <h1>
+                  지금 바로 나만의 해외교육을 찾아보세요!
+                </h1>
+              </div>
+              <div class="sec10_btn">
+                <a href="#" class="btn_connected">
+                  커넥티드 둘러보기
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footer__inner">
+        <div class="ft__cmpny-info">
+          <div class="logo">
+            <img src="/img/common/logo.png" alt="커넥티드 로고">
+          </div>
+          <div class="setting-lang">
+            <span class="current">KOR</span>
+            <button type="button" class="btn_open"></button>
+            <ul class="lang_list">
+              <li>KOR</li>
+              <li>ENG</li>
+              <li>CN</li>
+            </ul>
+          </div>
+          <button type="button" class="btn_consult"><span>전화상담 예약</span></button>
+          <button type="button" class="open_company_info">
+            <span>사업자 정보 펼치기</span>
+          </button>
+          <div class="ft_tel_info_cpright">
+            <div class="ft_tel_info">
+              <div class="tel">
+                <em>대표번호</em> 031-8027-7611~3 (토요일, 공휴일 휴무)<br>
+                오전 9시30분 - 오후 5시30분<br>
+                매달 마지막 금요일은 오후 3시30분까지
+              </div>
+              <div class="company-info">
+                <em>(주)비엘에프</em> <span class="dash">|</span> <br class="mobile_show">
+                <em>대표</em> 박보미 <br>
+                <em>사업자등록번호</em> 442-81-01686 <span class="dash">|</span> <br class="mobile_show"> <em>통신판매업신고</em>
+                제2020-경기하남-2190호<br>
+                <em>본사</em> 강원도 원주시 지정면 무릉로 43, 2층 207호<br>
+                <em>소재지</em> 경기도 하남시 미사대로 550<br class="mobile_show"> 현대지식산업센터 1차 A동 7층 011호<br>
+                <em>호스팅 사업자</em> Amazon Web Service (AWS)<br>
+              </div>
+            </div>
+            <p class="copyright">copyright 2023 Connect.ED. All rights Reserved</p>
+          </div>
+        </div>
+        <div class="ft__menu">
+          <div class="ft__gnb">
+            <dl class="menu">
+              <dt><a href="#">커넥티드</a></dt>
+              <dd><a href="#">커넥티드 메인</a></dd>
+              <dd><a href="#">커넥티드 파트너스</a></dd>
+            </dl>
+            <dl class="menu">
+              <dt><a href="#">해외교육</a></dt>
+              <dd><a href="#">맞춤 유학 찾기</a></dd>
+              <dd><a href="#">학교</a></dd>
+              <dd><a href="#">온라인 스쿨</a></dd>
+              <dd><a href="#">단기활동</a></dd>
+            </dl>
+            <dl class="menu">
+              <dt><a href="#">고객센터</a></dt>
+              <dd><a href="#">자주묻는질문</a></dd>
+              <dd><a href="#">공지사항</a></dd>
+              <dd><a href="#">전화상담 예약</a></dd>
+            </dl>
+            <div class="setting-lang">
+              <span class="current">KOR</span>
+              <button type="button" class="btn_open"></button>
+              <ul class="lang_list">
+                <li>KOR</li>
+                <li>ENG</li>
+                <li>CN</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ft__sns">
+            <ul>
+              <li><a href="#" class="sns_blog"></a></li>
+              <li><a href="#" class="sns_facebook"></a></li>
+              <li><a href="#" class="sns_insta"></a></li>
+            </ul>
+            <div class="terms-use">
+              <button type="button">이용약관</button>
+              <button type="button">개인정보보호정책</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+  <script>
+
+    $(function () {
+      AOS.init();
+
+      $('.faq_item:nth-child(1) .faq_quest').addClass('active')
+      $('.faq_item:nth-child(1) .faq_quest').siblings().slideDown()
+
+      $('.faq_item .faq_quest').click(function () {
+        $('.faq_item .faq_quest').not($(this)).removeClass('active')
+        $('.faq_item .faq_answer').not($(this).siblings()).slideUp()
+        $(this).toggleClass('active')
+        $(this).siblings().slideToggle()
+      })
+      var anmation = bodymovin.loadAnimation({
+        container: document.getElementById('animation1'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: '../img/landing/animation1.json'
+      });
+
+      var anmation2 = bodymovin.loadAnimation({
+        container: document.getElementById('animation2'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: '../img/landing/animation2.json'
+      });
+
+      const timeline3 = gsap.timeline({
+        scrollTrigger: {
+          trigger: '.section3',
+          pin: true,
+          start: 'top top',
+          end: '+=250%',
+          scrub: 0.8,
+          markers: false,
+          once: false,
+        },
+      })
+
+      timeline3.to($('#section3 .title_box:nth-child(1)'), { bottom: '50%', opacity: 1 })
+
+      timeline3
+        .add('start')
+        .to($('#section3 .title_box:nth-child(1)'), { bottom: '75%', opacity: 0 }, 'start')
+        .to($('#section3 .title_box:nth-child(2)'), { bottom: '50%', opacity: 1 }, 'start')
+        .set($('#section3 .title_box:nth-child(3)'), { bottom: '15%', opacity: 0, delay: 0.2 }, 'start')
+        .to($('#section3 .title_box:nth-child(3)'), { bottom: '25%', opacity: 0.3, delay: 0.2 }, 'start')
+
+      timeline3
+        .add('start2')
+        .to($('#section3 .title_box:nth-child(2)'), { bottom: '75%', opacity: 0 }, 'start2')
+        .to($('#section3 .title_box:nth-child(3)'), { bottom: '50%', opacity: 1 }, 'start2')
+        .set($('#section3 .title_box:nth-child(4)'), { bottom: '15%', opacity: 0, delay: 0.2 }, 'start2')
+        .to($('#section3 .title_box:nth-child(4)'), { bottom: '25%', opacity: 0.3, delay: 0.2 }, 'start2')
+
+      timeline3
+        .add('start3')
+        .to($('#section3 .title_box:nth-child(3)'), { bottom: '75%', opacity: 0 }, 'start3')
+        .to($('#section3 .title_box:nth-child(4)'), { bottom: '50%', opacity: 1 }, 'start3')
+        .set($('#section3 .title_box:nth-child(5)'), { bottom: '15%', opacity: 0, delay: 0.2 }, 'start3')
+        .to($('#section3 .title_box:nth-child(5)'), { bottom: '25%', opacity: 0.3, delay: 0.2 }, 'start3')
+
+      timeline3
+        .add('start4')
+        .to($('#section3 .title_box:nth-child(4)'), { bottom: '75%', opacity: 0 }, 'start4')
+        .to($('#section3 .title_box:nth-child(5)'), { bottom: '50%', opacity: 1 }, 'start4')
+
+      const timeline4 = gsap.timeline({
+        scrollTrigger: {
+          trigger: '.sec4_list',
+          pin: false,
+          start: '-=30%',
+          end: 'bottom bottom',
+          scrub: 4,
+          markers: false,
+          once: false,
+          onEnter: () => {
+            $('#section10 .btn_connected').fadeIn().css("display", "inline-block");
+          },
+          onLeaveBack: () => {
+            $('#section10 .btn_connected').fadeOut()
+          },
+        },
+      })
+
+      timeline4.to($('.sec4_list .sec4_item:nth-child(1)'), { x: 0, opacity: 1, duration: 1.5 })
+      timeline4.to($('.sec4_list .sec4_item:nth-child(2)'), { x: 0, opacity: 1, duration: 1.5 })
+      timeline4.to($('.sec4_list .sec4_item:nth-child(3)'), { x: 0, opacity: 1, duration: 1.5 })
+
+      const timeline = gsap.timeline({
+        scrollTrigger: {
+          trigger: '.sec5_box:nth-child(1)',
+          pin: true,
+          start: '+=25%',
+          end: '+=200%',
+          scrub: 2,
+          markers: false,
+          once: false,
+          onEnter: () => {
+            let landingInnerHeight = $('.landing__inner').height()
+            window.addEventListener('scroll', function () {
+              if (window.scrollY > (landingInnerHeight - 1000)) {
+                $('.section10').removeClass('fixed')
+              } else {
+                $('.section10').addClass('fixed')
+              }
+            });
+          },
+        },
+      })
+
+
+      timeline.set({}, {}, "+=0.2")
+      timeline.set($('#sec5_animate .phone img'), { left: 0, duration: 1 })
+      timeline.to($('#sec5_animate .phone img'), { left: '-100%', duration: 1 }, ">5")
+      timeline.to($('#sec5_animate .phone img'), { left: '-200%', duration: 1 }, ">5")
+      timeline.to($('#sec5_animate .phone img'), { left: '-300%', duration: 1 }, ">5")
+      timeline.to({}, {}, ">8")
+
+      const timeline2 = gsap.timeline({
+        scrollTrigger: {
+          trigger: '.sec5_box:nth-child(3)',
+          pin: false,
+          start: 'top top',
+          end: 'bottom bottom',
+          scrub: 4,
+          markers: false,
+          once: false,
+        },
+      })
+
+      timeline2.set($('.plan_service_list .plan_service'), { x: -40, opacity: 0 })
+      timeline2.to($('.plan_service_list .plan_service:nth-child(1)'), { x: 0, opacity: 1, duration: 1.5 })
+      timeline2.to($('.plan_service_list .plan_service:nth-child(2)'), { x: 0, opacity: 1, duration: 1.5 })
+      timeline2.to($('.plan_service_list .plan_service:nth-child(3)'), { x: 0, opacity: 1, duration: 1.5 })
+      timeline2.to($('.plan_service_list .plan_service:nth-child(4)'), { x: 0, opacity: 1, duration: 1.5 })
+
+      const timeline6 = gsap.timeline({
+        scrollTrigger: {
+          trigger: '#section6 .sec__inner',
+          pin: true,
+          start: '-=250px',
+          end: '+=250%',
+          scrub: 2,
+          markers: false,
+          once: false,
+        },
+      })
+
+      // let lastPrevTransform = 'translate3d(120px, 0px, -360px)';
+      // let prevTransform = 'translate3d(80px, 0px, -180px)';
+      // let nextTransform = 'translate3d(-80px, 0px, -180px)';
+      // let lastNextTransform = 'translate3d(-120px, 0px, -360px)';
+      // let lastZIndex = '-2';
+      // let prevNextZIndex = '-1';
+      let unit = 500;
+
+
+      timeline6.set($('.section6_newsletter'), { transform: 'translate3d(916px, 0px, 0px)', })
+      timeline6.to({}, {}, "+=1")
+      timeline6.to($('.section6_newsletter'), { transform: `translate3d(${916 - (unit * 1)}px, 0px, 0px)`, }, ">2")
+      timeline6.to($('.section6_newsletter'), { transform: `translate3d(${916 - (unit * 2)}px, 0px, 0px)`, }, ">2")
+      timeline6.to($('.section6_newsletter'), { transform: `translate3d(${916 - (unit * 3)}px, 0px, 0px)`, }, ">2")
+      timeline6.to($('.section6_newsletter'), { transform: `translate3d(${916 - (unit * 4)}px, 0px, 0px)`, }, ">2")
+      timeline6.to($('.section6_newsletter'), { transform: `translate3d(${916 - (unit * 5)}px, 0px, 0px)`, }, ">2")
+      timeline6.to({}, {}, "+=1")
+
+      // timeline6.to($('.section6_newsletter'), { transform: 'translate3d(916px, 0px, 0px)', "z-index": lastZIndex })
+      // timeline6.set($('.news_letter_item:nth-child(1)'), { transform: lastPrevTransform, "z-index": lastZIndex })
+      // timeline6.set($('.news_letter_item:nth-child(2)'), { transform: prevTransform, "z-index": prevNextZIndex })
+      // timeline6.set($('.news_letter_item:nth-child(3)'), { transform: 'translate3d(0px, 0px, 0px)', "z-index": "0"})
+      // timeline6.set($('.news_letter_item:nth-child(4)'), { transform: nextTransform, "z-index": prevNextZIndex })
+      // timeline6.set($('.news_letter_item:nth-child(5)'), { transform: lastNextTransform, "z-index": lastZIndex })
+      // timeline6.set($('.news_letter_item:nth-child(6)'), { opacity: 0 })
+
+    })
+
+    var sec8Swiper = new Swiper(".sec8_swiper", {
+      slidesPerView: 2,
+      centeredSlides: false,
+      loop: true,
+      loopedSlides: 3,
+      spaceBetween: 34,
+      mousewheel: true,
+      watchSlidesVisibility: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,  //브라우저가 768보다 클 때
+          spaceBetween: 40,
+        },
+        768: {
+          slidesPerView: 2,  //브라우저가 768보다 클 때
+          spaceBetween: 34,
+        },
+      },
+    });
+
+
+
+  </script>
+</body>
+
+</html>

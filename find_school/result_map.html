@@ -1,0 +1,1497 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <script type="text/javascript" src="https://dev.connectedu.com/lib/dev/js/jquery.js"></script>
+  <script
+    type="text/javascript">window.PBVAR = { "home_url": "https:\/\/dev.connectedu.com\/", "locale_domain": "pbpress", "ajax_url": "https:\/\/dev.connectedu.com\/ajax", "fileupload_url": "https:\/\/dev.connectedu.com\/fileupload", "filebase_url": "https:\/\/s3.ap-northeast-2.amazonaws.com\/cdn.supremestudyabroadtool.com", "theme_domain": "connectedu", "is_user_logged_in": false, "user_login_url": "https:\/\/dev.connectedu.com\/login" };</script>
+  <script type="text/javascript" src="https://dev.connectedu.com/lib/dev/comp-lib/all-main.js"></script>
+
+  <script type="text/plain" id="pb-crypt-public-key">-----BEGIN PUBLIC KEY-----
+		MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuPYcc3xNRQ49mjAFfQ0V
+		mcW5aXBX7z6r5HMCnOBP8WiXCs3kCJqtrM2o2lXFKZukvsuI7QW7f6AWAmvL1sN/
+		Q5YoKs6V9qjsnLlt/2LAy/odOZ2H+7gNHF0wTEG9qEUmwvNeIEV+GFSQcoHY72I5
+		FLKdRMJeWoF7N8BAWGl99+PPXyscviH8jyGqNUGya+Dj2mW7z36FZ4mIE7l7hry0
+		PXfpLLOR6eMtTD8qcmXia2AugJAd0PzVWax8dG0FCH4OGkjsXaI+u+d3C5AA5c2V
+		KfsBT3VxYaqnK+BzTGjIQ5lRbGrkdMy9ujKVGr6dkykrurY5pXydbaKxLSLbKcy0
+		CwIDAQAB
+		-----END PUBLIC KEY-----
+	</script>
+
+  <script type="text/javascript" src="https://dev.connectedu.com/_pblang.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://dev.connectedu.com/_page_builder_compiled.css">
+  <link rel="stylesheet" type="text/css" href="https://dev.connectedu.com/lib/dev/css/page-builder/common.css?v=2">
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvHXb0hXEJwqfcSQlM7KMxqzrxCmazlPM&libraries=geometry,places"
+    defer></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    viewport-fit=cover' />
+  <link rel="apple-touch-icon" sizes="57x57"
+    href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60"
+    href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72"
+    href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76"
+    href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114"
+    href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120"
+    href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144"
+    href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152"
+    href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180"
+    href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"
+    href="https://dev.connectedu.com/themes/connected/img/icon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="https://dev.connectedu.com/themes/connected/img/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96"
+    href="https://dev.connectedu.com/themes/connected/img/icon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16"
+    href="https://dev.connectedu.com/themes/connected/img/icon/favicon-16x16.png">
+  <link rel="stylesheet" type="text/css"
+    href="https://dev.connectedu.com/themes/connected/lib/dev/css/pb-main.css?v=1.0.0_debug_1Sabk">
+  <script type="text/javascript"
+    src="https://dev.connectedu.com/themes/connected/lib/dev/comp-lib/all.js?v=1.0.0_debug_1Sabk"></script>
+  <script type="text/javascript" src="https://dev.connectedu.com/themes/connected/lib/dev/js/pb-dev.js"></script>
+  <title>커넥티드</title>
+  <!-- jQuery CDN -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js">
+  </script>
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- Star -->
+  <link rel="stylesheet" href="../js/star/star-rating-svg.css">
+  <script src="../js/star/jquery.star-rating-svg.js"></script>
+  <!-- AOS CSS & JS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- NiceSelect -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <!-- gsap & TWEENMAX -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+
+  <!-- Custom CSS & JS -->
+  <link rel="stylesheet" href="../css/common2.css">
+  <script src="../js/common2.js" defer></script>
+  <meta name="title" content="커넥티드">
+  <meta name="keywords" content="">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="Korean">
+
+  <!-- Search Engine -->
+  <meta name="description" content="커넥티드">
+  <meta name="image" content="https://dev.connectedu.com/themes/connected/img/og.jpg">
+  <!-- Schema.org for Google -->
+  <meta itemprop="name" content="커넥티드">
+  <meta itemprop="description" content="커넥티드">
+
+  <meta itemprop="image" content="https://dev.connectedu.com/themes/connected/img/og.jpg">
+  <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+  <meta property="og:title" content="커넥티드">
+  <meta property="og:description" content="커넥티드">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.connectedu.com/themes/connected/img/og_new.png">
+  <meta property="og:url" content="https://dev.connectedu.com/">
+  <meta property="og:site_name" content="커넥티드">
+  <meta name="facebook-domain-verification" content="ceg8hozu78orpcw7kul1sdm6812f9u" />
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WJR8W6Q');</script>
+  <!-- End Google Tag Manager -->
+  <!-- naver-site-verification -->
+  <meta name="naver-site-verification" content="0484b9a899fa8076d2db02d74a9238e6f52dfea2" />
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '192964157157918');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=192964157157918&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!-- Channel Plugin Scripts -->
+  <script>
+    (function () {
+      var w = window;
+      if (w.ChannelIO) {
+        return (window.console.error || window.console.log || function () { })('ChannelIO script included twice.');
+      }
+      var ch = function () {
+        ch.c(arguments);
+      };
+      ch.q = [];
+      ch.c = function (args) {
+        ch.q.push(args);
+      };
+      w.ChannelIO = ch;
+      function l() {
+        if (w.ChannelIOInitialized) {
+          return;
+        }
+        w.ChannelIOInitialized = true;
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+        s.charset = 'UTF-8';
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+      }
+      if (document.readyState === 'complete') {
+        l();
+      } else if (window.attachEvent) {
+        window.attachEvent('onload', l);
+      } else {
+        window.addEventListener('DOMContentLoaded', l, false);
+        window.addEventListener('load', l, false);
+      }
+    })();
+    /*
+    ChannelIO('boot', {
+      "pluginKey": "378cf6f4-3169-4a37-a85e-2e8b36cdab6a"
+    });
+    */
+  </script>
+  <!-- End Channel Plugin -->
+
+  <!-- nam [s] -->
+  <style>
+    #pb-pc-submenu-list li:first-child {
+      display: none;
+    }
+
+    #pb-mobile-menu-panel>.menu-list>li:last-child {
+      display: none;
+    }
+
+    #pb-pc-submenu-list>li.locale-link:hover .submenu-group,
+    #pb-pc-submenu-list>li>.submenu-group>.submenu-list>li.change-locale-menu,
+    #pb-pc-submenu-list>li>.submenu-group>.submenu-list>li.change-locale-menu li {
+      display: block !important;
+      opacity: 1;
+    }
+
+    @media screen and (max-width: 767px) {
+      #pb-mobile-menu-panel {
+        padding-bottom: 140px;
+      }
+
+      .locale-selector.mobile {
+        width: 120px;
+        margin: 0 auto;
+      }
+    }
+  </style>
+  <!-- nam [e] -->
+
+</head>
+
+<body class="" oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+
+  <div id="wrap" class="no_layout header_nofixed">
+    <header>
+      <div class="header__inner">
+        <div class="hd__top">
+          <div class="hd-search">
+            <a href="/" class="logo">
+              <img src="../img/common/logo.png" alt="커넥티드 로고">
+            </a>
+            <form action="" class="form_hd-search">
+              <fieldset>
+                <div class="search">
+                  <input type="text" placeholder="검색어를 입력하세요.">
+                  <button type="button" class="btn_search"></button>
+                </div>
+              </fieldset>
+            </form>
+            <button type="button" class="mo-icon_menu"></button>
+          </div>
+          <div class="hd-language">
+            <ul class="hd-navigation">
+              <li>
+                <div class="setting-lang">
+                  <span class="current">KOR</span>
+                  <button type="button" class="btn_open"></button>
+                  <ul class="lang_list">
+                    <li>KOR</li>
+                    <li>ENG</li>
+                    <li>CN</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="hd__bottom">
+          <div class="hd_category_gnb">
+            <div class="category">
+              <div class="category_icon">
+                <span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <p>전체 카테고리</p>
+              <button type="button" class="btn_open"></button>
+            </div>
+            <nav id="gnb">
+              <ul>
+                <!-- 해당 메뉴 접근시 li에 active 클래스 추가 -->
+                <li><a href="./school/school_home.html">학교</a></li>
+                <li><a href="./school/online_home.html">온라인학교</a></li>
+                <li><a href="./activity/short_home.html">단기활동</a></li>
+                <li><a href="./activity/online_home.html">온라인 단기활동</a></li>
+                <li><a href="./magazine/list.html">매거진</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="hd_login">
+            <!-- 비로그인 환경 -->
+            <!-- <a href="/login.html" class="btn_login">로그인</a>
+	                <a href="#" class="btn-smType btn-round btn_signup">회원가입</a> -->
+            <!-- 로그인 환경 -->
+            <div class="hd_mypage">
+              <button type="button" class="btn-smType btn-round btn_mypage">마이페이지</button>
+              <ul class="mypage_list">
+                <li><a href="#" class="my_info">계정 정보</a></li>
+                <li><a href="#" class="my_noti">알림</a></li>
+                <li><a href="#" class="my_like">관심리스트</a></li>
+                <li><a href="#" class="my_portfolio">포트폴리오</a></li>
+                <li><a href="#" class="my_payment">결제내역</a></li>
+                <li><a href="#" class="my_aplc">지원서 리스트</a></li>
+                <li><a href="#" class="logout">로그아웃</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 전체 카테고리 -->
+      <div id="hd_category">
+        <div class="category__inner">
+          <ul class="category">
+            <li>
+              <span class="category_nm">학교</span>
+              <ul class="category_sub">
+                <li>
+                  <a href="#" class="category_nm">미국</a>
+                  <ul class="category_sub">
+                    <li><a href="#" class="category_nm">미국</a></li>
+                    <li><a href="#" class="category_nm">영국</a></li>
+                    <li><a href="#" class="category_nm">캐나다</a></li>
+                  </ul>
+                </li>
+                <li><a href="#" class="category_nm">영국</a></li>
+                <li><a href="#" class="category_nm">캐나다</a></li>
+              </ul>
+            </li>
+            <li><span class="category_nm">온라인학교</span>
+              <ul class="category_sub">
+                <li>
+                  <a href="#" class="category_nm">미국1</a>
+                  <ul class="category_sub">
+                    <li><a href="#" class="category_nm">미국</a></li>
+                    <li><a href="#" class="category_nm">영국</a></li>
+                    <li><a href="#" class="category_nm">캐나다</a></li>
+                  </ul>
+                </li>
+                <li><a href="#" class="category_nm">영국</a></li>
+                <li><a href="#" class="category_nm">캐나다</a></li>
+              </ul>
+            </li>
+            <li><span class="category_nm">단기활동</span>
+              <ul class="category_sub">
+                <li>
+                  <a href="#" class="category_nm">미국2</a>
+                  <ul class="category_sub">
+                    <li><a href="#" class="category_nm">미국</a></li>
+                    <li><a href="#" class="category_nm">영국</a></li>
+                    <li><a href="#" class="category_nm">캐나다</a></li>
+                  </ul>
+                </li>
+                <li><a href="#" class="category_nm">영국</a></li>
+                <li><a href="#" class="category_nm">캐나다</a></li>
+              </ul>
+            </li>
+            <li><span class="category_nm">온라인 단기활동</span></li>
+            <li><span class="category_nm">매거진</span></li>
+          </ul>
+        </div>
+      </div>
+      <!-- 모바일 햄버거 버튼 클릭 메뉴 -->
+      <div class="mobile_gnb">
+        <div class="mobile_gnb__inner">
+          <div class="mobile_gnb__header">
+            <div class="logo">
+              <img src="./img/common/logo.png" alt="로고">
+            </div>
+            <button type="button" class="btn_close"></button>
+          </div>
+          <div class="mobile_gnb__content">
+            <!-- 로그인 전 로그인 유도 -->
+            <div class="m_gnb-login">
+              <span>
+                로그인 하시고<br>
+                더 자세한 정보를 확인하세요!
+              </span>
+              <a href="/login.html" class="btn_login">로그인</a>
+            </div>
+            <ul class="m-gnb">
+              <!-- 로그인 후 마이페이지 노출 -->
+              <li>
+                <button type="button" class="a_menu mypage">마이페이지</button>
+              </li>
+              <!-- 1뎁스 -->
+              <li>
+                <button type="button" class="a_menu a_gnb">학교</button>
+                <!-- 2뎁스 -->
+                <div class="mobile_submenu">
+                  <div class="gnb_submenu__inner">
+                    <div class="gnb_submenu__hd">
+                      <button type="button" class="btn_revert"></button><a href="./school/school_home.html">학교 홈</a>
+                    </div>
+                    <ul class="gnb_submenu__menu">
+                      <li>
+                        <button type="button" class="a_menu a_gnb">미국</button>
+                        <!-- 3뎁스 -->
+                        <div class="mobile_submenu">
+                          <div class="gnb_submenu__inner">
+                            <div class="gnb_submenu__hd">
+                              <button type="button" class="btn_revert"></button><a href="" class="menu_nm"></a>
+                            </div>
+                            <ul class="gnb_submenu__menu">
+                              <li><button type="button" class="a_menu a_gnb">미국1</button></li>
+                              <li><button type="button" class="a_menu a_gnb">미국2</button></li>
+                              <li><button type="button" class="a_menu a_gnb">미국3</button></li>
+                              <li><button type="button" class="a_menu a_gnb">미국4</button></li>
+                              <li><button type="button" class="a_menu a_gnb">미국5</button></li>
+                              <li><button type="button" class="a_menu a_gnb">미국6</button></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <button type="button" class="a_menu a_gnb">영국</button>
+                        <!-- 3뎁스 -->
+                        <div class="mobile_submenu">
+                          <div class="gnb_submenu__inner">
+                            <div class="gnb_submenu__hd">
+                              <button type="button" class="btn_revert"></button><a href="" class="menu_nm"></a>
+                            </div>
+                            <ul class="gnb_submenu__menu">
+                              <li><button type="button" class="a_menu a_gnb">영국1</button></li>
+                              <li><button type="button" class="a_menu a_gnb">영국2</button></li>
+                              <li><button type="button" class="a_menu a_gnb">영국3</button></li>
+                              <li><button type="button" class="a_menu a_gnb">영국4</button></li>
+                              <li><button type="button" class="a_menu a_gnb">영국5</button></li>
+                              <li><button type="button" class="a_menu a_gnb">영국6</button></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li><button type="button" class="a_menu a_gnb">캐나다</button></li>
+                      <li><button type="button" class="a_menu a_gnb">미국</button></li>
+                      <li><button type="button" class="a_menu a_gnb">영국</button></li>
+                      <li><button type="button" class="a_menu a_gnb">캐나다</button></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <button type="button" data-key="gnb2" data-level="1" class="a_menu a_gnb">온라인학교</button>
+              </li>
+              <li>
+                <button type="button" data-key="gnb3" data-level="1" class="a_menu a_gnb">단기활동</button>
+              </li>
+              <li>
+                <button type="button" data-key="gnb4" data-level="1" class="a_menu a_gnb">온라인 단기활동</button>
+              </li>
+              <li>
+                <button type="button" data-key="gnb5" data-level="1" class="a_menu a_gnb">매거진</button>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile_gnb__mypage">
+            <div class="gnb_mypage__inner">
+              <button type="button" class="btn_revert">전체</button>
+              <ul class="mypage__menu">
+                <li><a href="#" class="my_info">계정 정보</a></li>
+                <li><a href="#" class="my_noti">알림</a></li>
+                <li><a href="#" class="my_like">관심리스트</a></li>
+                <li><a href="#" class="my_portfolio">포트폴리오</a></li>
+                <li><a href="#" class="my_payment">결제내역</a></li>
+                <li><a href="#" class="my_aplc">지원서 리스트</a></li>
+                <li><a href="#" class="logout">로그아웃</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <link rel="stylesheet" href="/html/css/fonts.css?20231016100026">
+    <link rel="stylesheet" href="/html/css/style.css?20231016100026">
+    <script src="/html/js/js.js?20231016100026"></script>
+
+    <main>
+      <div class="result_map">
+        <div class="school_list">
+          <div class="result_header">
+            <h3><b class="name">홍길동홍길동홍길동홍길동홍길동홍길동홍길동홍길동홍길동</b> 님을 위한 <span>20</span>개 추천학교</h3>
+            <div class="result_btns">
+              <button type="button" class="btn_start"><span>처음으로</span></button>
+              <div class="right">
+                <button type="button" class="btn_filter"><span>필터</span></button>
+                <!-- 필터가 선택된 경우 -->
+                <!-- <button type="button" class="btn_filter active"><span>필터 3</span></button> -->
+                <select class="custom-select select-primary w100p">
+                  <option value="">조회 많은순</option>
+                  <option value="">학비 높은순</option>
+                  <option value="">학비 낮은순</option>
+                </select>
+                <!-- 모바일 셀렉트 박스 -->
+                <div class="mobile-select_box" onclick="clickMobileSelect()">
+                  <!-- 셀렉트박스 제일 상단 옵션 -->
+                  <button type="button" id="select_option">조회 많은순</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="result_item_wrap">
+            <div class="no_result">
+              <div class="no_result__inner">
+                <img src="../img/find_school/icon_category.png" alt="">
+                <p>
+                  선택한 필터로 추천 받을 수 있는 학교가 없습니다.<br>
+                  필터를 조절하거나 초기화해 보세요!
+                </p>
+                <button type="button" class="btn_reset">필터 초기화</button>
+              </div>
+            </div>
+            <div class="result_list">
+              <div class="school-card-item">
+                <div class="content">
+                  <div class="card_front">
+                    <a href="./detail.html" class="thum">
+                      <div class="btn_like_box">
+                        <input type="checkbox" id="btn_like5" />
+                        <label for="btn_like5">
+                          <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                              <path
+                                d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+                              <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+                            </g>
+                          </svg>
+                        </label>
+                      </div>
+                      <em class="grade">A+</em>
+                      <img src="../img/item_thum05.png" alt="썸네일 이미지">
+                    </a>
+                    <div class="desc">
+                      <p class="star_loc">
+                        <span class="loc">Massachusetts, Boston</span>
+                      </p>
+                      <h3 class="title">호주 골드코스트 겨울방학 영어캠프호주 골드코스트 겨울방학 영어캠프호주 골드코스트 겨울방학 영어캠프
+                        2023</h3>
+                      <div class="result_price">
+                        <div class="price_popup">
+                          <span>기숙사 비용이 포함된 금액이에요!</span>
+                          <button type="button" class="btn_close"></button>
+                        </div>
+                        <p class="price with_icon">USD- $2,000<span>/년</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="school-card-item">
+                <div class="content">
+                  <div class="card_front">
+                    <a href="./detail.html" class="thum">
+                      <div class="btn_like_box">
+                        <input type="checkbox" id="btn_like5" />
+                        <label for="btn_like5">
+                          <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                              <path
+                                d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+                              <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+                            </g>
+                          </svg>
+                        </label>
+                      </div>
+                      <em class="grade">A+</em>
+                      <img src="../img/item_thum05.png" alt="썸네일 이미지">
+                    </a>
+                    <div class="desc">
+                      <p class="star_loc">
+                        <span class="loc">Massachusetts, Boston</span>
+                      </p>
+                      <h3 class="title">호주 골드코스트 겨울방학 영어캠프
+                        2023</h3>
+                      <div class="result_price">
+                        <div class="price_popup">
+                          <span>기숙사 비용이 포함된 금액이에요!</span>
+                          <button type="button" class="btn_close"></button>
+                        </div>
+                        <p class="price with_icon">USD- $2,000<span>/년</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="school-card-item">
+                <div class="content">
+                  <div class="card_front">
+                    <a href="./detail.html" class="thum">
+                      <div class="btn_like_box">
+                        <input type="checkbox" id="btn_like5" />
+                        <label for="btn_like5">
+                          <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                              <path
+                                d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+                              <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+                            </g>
+                          </svg>
+                        </label>
+                      </div>
+                      <em class="grade">A+</em>
+                      <img src="../img/item_thum05.png" alt="썸네일 이미지">
+                    </a>
+                    <div class="desc">
+                      <p class="star_loc">
+                        <span class="loc">Massachusetts, Boston</span>
+                      </p>
+                      <h3 class="title">호주 골드코스트 겨울방학 영어캠프
+                        2023</h3>
+                      <div class="result_price">
+                        <div class="price_popup">
+                          <span>기숙사 비용이 포함된 금액이에요!</span>
+                          <button type="button" class="btn_close"></button>
+                        </div>
+                        <p class="price with_icon">USD- $2,000<span>/년</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="school-card-item">
+                <div class="content">
+                  <div class="card_front">
+                    <a href="./detail.html" class="thum">
+                      <div class="btn_like_box">
+                        <input type="checkbox" id="btn_like5" />
+                        <label for="btn_like5">
+                          <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                              <path
+                                d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+                              <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+                            </g>
+                          </svg>
+                        </label>
+                      </div>
+                      <em class="grade">A+</em>
+                      <img src="../img/item_thum05.png" alt="썸네일 이미지">
+                    </a>
+                    <div class="desc">
+                      <p class="star_loc">
+                        <span class="loc">Massachusetts, Boston</span>
+                      </p>
+                      <h3 class="title">호주 골드코스트 겨울방학 영어캠프
+                        2023</h3>
+                      <div class="result_price">
+                        <div class="price_popup">
+                          <span>기숙사 비용이 포함된 금액이에요!</span>
+                          <button type="button" class="btn_close"></button>
+                        </div>
+                        <p class="price with_icon">USD- $2,000<span>/년</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="school-card-item">
+                <div class="content">
+                  <div class="card_front">
+                    <a href="./detail.html" class="thum">
+                      <div class="btn_like_box">
+                        <input type="checkbox" id="btn_like5" />
+                        <label for="btn_like5">
+                          <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                              <path
+                                d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+                              <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+                            </g>
+                          </svg>
+                        </label>
+                      </div>
+                      <em class="grade">A+</em>
+                      <img src="../img/item_thum05.png" alt="썸네일 이미지">
+                    </a>
+                    <div class="desc">
+                      <p class="star_loc">
+                        <span class="loc">Massachusetts, Boston</span>
+                      </p>
+                      <h3 class="title">호주 골드코스트 겨울방학 영어캠프
+                        2023</h3>
+                      <div class="result_price">
+                        <div class="price_popup">
+                          <span>기숙사 비용이 포함된 금액이에요!</span>
+                          <button type="button" class="btn_close"></button>
+                        </div>
+                        <p class="price with_icon">USD- $2,000<span>/년</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="school-card-item">
+                <div class="content">
+                  <div class="card_front">
+                    <a href="./detail.html" class="thum">
+                      <div class="btn_like_box">
+                        <input type="checkbox" id="btn_like5" />
+                        <label for="btn_like5">
+                          <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                              <path
+                                d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+                              <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+                            </g>
+                          </svg>
+                        </label>
+                      </div>
+                      <em class="grade">A+</em>
+                      <img src="../img/item_thum05.png" alt="썸네일 이미지">
+                    </a>
+                    <div class="desc">
+                      <p class="star_loc">
+                        <span class="loc">Massachusetts, Boston</span>
+                      </p>
+                      <h3 class="title">호주 골드코스트 겨울방학 영어캠프
+                        2023</h3>
+                      <div class="result_price">
+                        <div class="price_popup">
+                          <span>기숙사 비용이 포함된 금액이에요!</span>
+                          <button type="button" class="btn_close"></button>
+                        </div>
+                        <p class="price with_icon">USD- $2,000<span>/년</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="school-card-item">
+                <div class="content">
+                  <div class="card_front">
+                    <a href="./detail.html" class="thum">
+                      <div class="btn_like_box">
+                        <input type="checkbox" id="btn_like5" />
+                        <label for="btn_like5">
+                          <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                              <path
+                                d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+                              <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+                            </g>
+                          </svg>
+                        </label>
+                      </div>
+                      <em class="grade">A+</em>
+                      <img src="../img/item_thum05.png" alt="썸네일 이미지">
+                    </a>
+                    <div class="desc">
+                      <p class="star_loc">
+                        <span class="loc">Massachusetts, Boston</span>
+                      </p>
+                      <h3 class="title">호주 골드코스트 겨울방학 영어캠프
+                        2023</h3>
+                      <div class="result_price">
+                        <div class="price_popup">
+                          <span>기숙사 비용이 포함된 금액이에요!</span>
+                          <button type="button" class="btn_close"></button>
+                        </div>
+                        <p class="price with_icon">USD- $2,000<span>/년</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="school-card-item">
+                <div class="content">
+                  <div class="card_front">
+                    <a href="./detail.html" class="thum">
+                      <div class="btn_like_box">
+                        <input type="checkbox" id="btn_like5" />
+                        <label for="btn_like5">
+                          <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                            <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                              <path
+                                d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                                stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+                              <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+                            </g>
+                          </svg>
+                        </label>
+                      </div>
+                      <em class="grade">A+</em>
+                      <img src="../img/item_thum05.png" alt="썸네일 이미지">
+                    </a>
+                    <div class="desc">
+                      <p class="star_loc">
+                        <span class="loc">Massachusetts, Boston</span>
+                      </p>
+                      <h3 class="title">호주 골드코스트 겨울방학 영어캠프
+                        2023</h3>
+                      <div class="result_price">
+                        <div class="price_popup">
+                          <span>기숙사 비용이 포함된 금액이에요!</span>
+                          <button type="button" class="btn_close"></button>
+                        </div>
+                        <p class="price with_icon">USD- $2,000<span>/년</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="find-school_banner">
+              <p>
+                찾으시는 학교가 없나요?<br>
+                <span>커넥티드 전문가에게 무료로 상담 받아보세요!</span>
+              </p>
+            </a>
+          </div>
+          <div class="school_filter">
+            <div class="filter_header">
+              <h3>필터</h3>
+              <button type="button" class="btn_filter_close"></button>
+            </div>
+            <div class="filter_contents_wrap">
+              <div class="filter_contents">
+                <!-- 학비 -->
+                <div class="filter_select">
+                  <div class="filter_title flex">
+                    <h5>학비</h5>
+                    <p>카드 진행 중 입력했던 학비 범위 내에서만 다시 조정할 수 있어요</p>
+                  </div>
+                  <div class="filter_range">
+                    <div class="range">
+                      <div id="slider-range" class="custom_range"></div>
+                      <div class="input_range">
+                        <div class="range_box low">
+                          <span>최저</span>
+                          <div class="input">
+                            <input type="text" id="range_low" class="input_number">
+                            <span class="unit">USD</span>
+                          </div>
+                        </div>
+                        <span class="dash"></span>
+                        <div class="range_box high">
+                          <span>최고</span>
+                          <div class="input">
+                            <input type="text" id="range_high" class="input_number">
+                            <span class="unit">USD</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 지역 -->
+                <div class="filter_select">
+                  <div class="filter_title flex">
+                    <h5>지역</h5>
+                    <p>카드 진행 중 선택했던 지역 범위 내의 다른 지역만 선택할 수 있어요</p>
+                  </div>
+                  <div class="filter_range">
+                    <div class="selected_area">
+                      <p>메사추세츠, 캘리포니아 외 1개 선택됨</p>
+                    </div>
+                    <button type="button" class="btn_reset_range">범위 내 재선택</button>
+                  </div>
+                </div>
+                <!-- ESL 필요여부 -->
+                <div class="filter_select">
+                  <div class="filter_title">
+                    <div class="tit">
+                      <h5>ESL 필요여부</h5>
+                      <div class="info">
+                        <button type="button" class="btn_question"></button>
+                        <p class="info_cnts">
+                          ESL 필요여부에 대한 텍스트
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter_choose_list">
+                    <div class="checkbox_choose">
+                      <label for="chk0_1">
+                        <input type="checkbox" id="chk0_1" name="checkbox_0"><em>필요</em>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <!-- 전체 학생수 -->
+                <div class="filter_select">
+                  <div class="filter_title">
+                    <div class="tit">
+                      <h5>전체 학생수</h5>
+                      <div class="info">
+                        <button type="button" class="btn_question"></button>
+                        <p class="info_cnts">
+                          전체 학생수에 대한 텍스트
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter_choose_list">
+                    <div class="checkbox_choose">
+                      <label for="chkA_1">
+                        <input type="checkbox" id="chkA_1" name="checkbox_A"><em>100명 이하</em>
+                      </label>
+                    </div>
+                    <div class="checkbox_choose">
+                      <label for="chkA_2">
+                        <input type="checkbox" id="chkA_2" name="checkbox_A"><em>100 ~ 400명</em>
+                      </label>
+                    </div>
+                    <div class="checkbox_choose">
+                      <label for="chkA_3">
+                        <input type="checkbox" id="chkA_3" name="checkbox_A"><em>400 ~ 1,000명</em>
+                      </label>
+                    </div>
+                    <div class="checkbox_choose">
+                      <label for="chkA_4">
+                        <input type="checkbox" id="chkA_4" name="checkbox_A"><em>1,000명 ~ 2,000명</em>
+                      </label>
+                    </div>
+                    <div class="checkbox_choose">
+                      <label for="chkA_5">
+                        <input type="checkbox" id="chkA_5" name="checkbox_A"><em>2,000명 이상</em>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <!-- 교사 1인당 학생수 -->
+                <div class="filter_select">
+                  <div class="filter_title">
+                    <div class="tit">
+                      <h5>교사 1인당 학생수</h5>
+                      <div class="info">
+                        <button type="button" class="btn_question"></button>
+                        <p class="info_cnts">
+                          교사 1인당 학생수에 대한 텍스트
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter_choose_list">
+                    <div class="checkbox_choose">
+                      <label for="chkB_1">
+                        <input type="checkbox" id="chkB_1" name="checkbox_B"><em>3명 ~ 5명</em>
+                      </label>
+                    </div>
+                    <div class="checkbox_choose">
+                      <label for="chkB_2">
+                        <input type="checkbox" id="chkB_2" name="checkbox_B"><em>5명 ~ 7명</em>
+                      </label>
+                    </div>
+                    <div class="checkbox_choose">
+                      <label for="chkB_3">
+                        <input type="checkbox" id="chkB_3" name="checkbox_B"><em>7명 ~ 10명</em>
+                      </label>
+                    </div>
+                    <div class="checkbox_choose">
+                      <label for="chkB_4">
+                        <input type="checkbox" id="chkB_4" name="checkbox_B"><em>3명 이하</em>
+                      </label>
+                    </div>
+                    <div class="checkbox_choose">
+                      <label for="chkB_5">
+                        <input type="checkbox" id="chkB_5" name="checkbox_B"><em>10명 이상</em>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <!-- 특화분야 -->
+                <div class="filter_select">
+                  <div class="filter_title">
+                    <div class="tit">
+                      <h5>특화분야</h5>
+                      <div class="info">
+                        <button type="button" class="btn_question"></button>
+                        <p class="info_cnts">
+                          특화분야에 대한 텍스트
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter_choose_list">
+                    <div class="checkbox_choose">
+                      <label for="chkC_1">
+                        <input type="checkbox" id="chkC_1" name="checkbox_C"><em>STEM</em>
+                      </label>
+                    </div>
+                    <div class="checkbox_choose">
+                      <label for="chkC_2">
+                        <input type="checkbox" id="chkC_2" name="checkbox_C"><em>스포츠</em>
+                      </label>
+                    </div>
+                    <div class="checkbox_choose">
+                      <label for="chkC_3">
+                        <input type="checkbox" id="chkC_3" name="checkbox_C"><em>군사</em>
+                      </label>
+                    </div>
+                    <div class="checkbox_choose">
+                      <label for="chkC_4">
+                        <input type="checkbox" id="chkC_4" name="checkbox_C"><em>음악</em>
+                      </label>
+                    </div>
+                    <div class="checkbox_choose">
+                      <label for="chkC_5">
+                        <input type="checkbox" id="chkC_5" name="checkbox_C"><em>영재</em>
+                      </label>
+                    </div>
+                    <div class="checkbox_choose">
+                      <label for="chkC_6">
+                        <input type="checkbox" id="chkC_6" name="checkbox_C"><em>공연예술</em>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <!-- 어학성적 -->
+                <div class="filter_select">
+                  <div class="filter_title">
+                    <div class="tit">
+                      <h5>어학성적</h5>
+                      <div class="info">
+                        <button type="button" class="btn_question"></button>
+                        <p class="info_cnts">
+                          어학성적에 대한 텍스트
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter_choose_list">
+                    <div class="checkbox_choose">
+                      <label for="chkD_1">
+                        <input type="checkbox" id="chkD_1" name="checkbox_D"><em>SLEP</em>
+                      </label>
+                    </div>
+                    <div class="checkbox_choose">
+                      <label for="chkD_2">
+                        <input type="checkbox" id="chkD_2" name="checkbox_D"><em>TOEFL JUNIOR</em>
+                      </label>
+                    </div>
+                    <div class="checkbox_choose">
+                      <label for="chkD_3">
+                        <input type="checkbox" id="chkD_3" name="checkbox_D"><em>TOEFL</em>
+                      </label>
+                    </div>
+                    <div class="checkbox_choose">
+                      <label for="chkD_4">
+                        <input type="checkbox" id="chkD_4" name="checkbox_D"><em>IELTS</em>
+                      </label>
+                    </div>
+                    <div class="checkbox_choose">
+                      <label for="chkD_5">
+                        <input type="checkbox" id="chkD_5" name="checkbox_D"><em>SSAT</em>
+                      </label>
+                    </div>
+                    <div class="checkbox_choose">
+                      <label for="chk20">
+                        <input type="checkbox" id="chkD_6" name="checkbox_D"><em>ISEE</em>
+                      </label>
+                    </div>
+                    <div class="checkbox_choose">
+                      <label for="chkD_7">
+                        <input type="checkbox" id="chkD_7" name="checkbox_D"><em>DUOLINGO</em>
+                      </label>
+                    </div>
+                    <div class="checkbox_choose">
+                      <label for="chkD_8">
+                        <input type="checkbox" id="chkD_8" name="checkbox_D"><em>없음</em>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filter_btns">
+              <button type="button" class="btn_reset"><span>초기화</span></button>
+              <button type="button" class="btn_result"><span>10</span>개 결과보기</button>
+            </div>
+          </div>
+          <div class="area_filter">
+            <div class="area__header">
+              <button type="button" class="btn_revert"></button>
+              <h3>돌아가기</h3>
+            </div>
+            <div class="area_filter__contents">
+              <div class="area_title">
+                <h3>지역</h3>
+                <p>카드 진행 중 선택했던 지역 범위 내의 다른 지역만 선택할 수 있어요</p>
+              </div>
+              <div class="area_select_cnts">
+                <div class="select-area__inner">
+                  <ul class="area_list">
+                    <li><span>지역명1</span></li>
+                    <li><span>메사추세츠</span></li>
+                    <li><span>지역명2</span></li>
+                    <li><span>지역명3</span></li>
+                    <li><span>지역명4</span></li>
+                    <li><span>지역명5</span></li>
+                  </ul>
+                  <ul class="area-city_list">
+                    <li><span class="select_txt">지역 선택</span></li>
+                  </ul>
+                </div>
+                <div class="selected_area_list">
+                  <div class="no_result">
+                    <p>지역을 선택해 주세요</p>
+                  </div>
+                  <div class="selected_badge_list open">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filter_btns">
+              <button type="button" class="btn_reset"><span>초기화</span></button>
+              <button type="button" class="btn_result">적용</button>
+            </div>
+          </div>
+        </div>
+        <div class="school_map">
+          <div class="school-card-item" style="top: 320px; left: 320px;">
+            <button type="button" class="btn_close_card"></button>
+            <div class="content">
+              <div class="card_front">
+                <a href="./detail.html" class="thum">
+                  <div class="btn_like_box">
+                    <input type="checkbox" id="btn_like" />
+                    <label for="btn_like">
+                      <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                          <path
+                            d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                            stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+                          <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+                        </g>
+                      </svg>
+                    </label>
+                  </div>
+                  <em class="grade">A+</em>
+                  <img src="../img/item_thum05.png" alt="썸네일 이미지">
+                </a>
+                <div class="desc">
+                  <p class="star_loc">
+                    <span class="loc">Massachusetts, Boston</span>
+                  </p>
+                  <h3 class="title">호주 골드코스트 겨울방학 영어캠프호주 골드코스트 겨울방학 영어캠프호주 골드코스트 겨울방학 영어캠프
+                    2023</h3>
+                  <div class="result_price">
+                    <div class="price_popup">
+                      <span>기숙사 비용이 포함된 금액이에요!</span>
+                      <button type="button" class="btn_close"></button>
+                    </div>
+                    <p class="price with_icon">USD- $2,000<span>/년</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="alert_message">
+            <div class="message__inner">
+              <span>관심학교로 등록했습니다.</span>
+              <a href="#">보러가기</a>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="btn_bottom btn_show_list"><span>목록 보기</span></button>
+      </div>
+    </main>
+  </div>
+  <!-- 정렬 선택 모달 시작 -->
+  <div id="modal-select-sort" class="modal modal_select_choose bottom">
+    <div class="modal__inner">
+      <div class="modal__close">
+        <button type="button" class="btn_modal-close" onclick="closeModal('modal-select-grade')"></button>
+      </div>
+      <div class="modal__header">
+        <p>정렬</p>
+      </div>
+      <div class="modal__content">
+        <form action="" class="form_select">
+          <fieldset>
+            <ul class="select_option">
+              <li>
+                <button type="button" value="us" onclick="selectOption(this)">조회 많은순</button>
+              </li>
+              <li>
+                <button type="button" value="us" onclick="selectOption(this)">학비 높은순</button>
+              </li>
+              <li>
+                <button type="button" value="us" onclick="selectOption(this)">학비 낮은순</button>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- 정렬 선택 모달 끝 -->
+  <script>
+    // 스쿨 카드 가격 아이콘 눌렀을 때에 기숙사 비용 포함된 금액 팝업
+    $('.school-card-item .price.with_icon').click(function() {
+      $(this).siblings().addClass('active')
+    })
+
+    $('.school-card-item .price_popup .btn_close').click(function() {
+      $(this).parents('.price_popup').removeClass('active')
+    })
+
+    // 필터 버튼 클릭 시 필터 팝업 오픈
+    $('.school_list .result_header .btn_filter').click(function() {
+      $('html, body').css("overflow-y", "hidden")
+      $(this).parents('.school_list').addClass('open')
+    })
+
+    $('.school_filter .btn_filter_close').click(function() {
+      $('html, body').css("overflow-y", "auto")
+      $(this).parents('.school_list').removeClass('open')
+    })
+
+    // 필터 제목 옆 물음표 버튼 호버
+    $('.filter_title .btn_question').mouseover(function() {
+      $(this).siblings('.info_cnts').addClass('active')
+    }).mouseout(function() {
+      $(this).siblings('.info_cnts').removeClass('active')
+    })
+
+    // 필터 제목 클릭 시 컨텐츠 show, hide
+    $('.filter_title .tit').click(function() {
+      $(this).parents('.filter_title').siblings().slideToggle()
+      $(this).toggleClass('active')
+    })
+
+    // 필터 범위 내 재선택 클릭 시 범위 재선택 컨텐츠 open, hide
+    $('.school_filter .btn_reset_range').click(function() {
+      $('html, body').css("overflow-y", "hidden")
+      $(this).parents('.school_list').addClass('area_open')
+    })
+
+    $('.area_filter .btn_revert').click(function () {
+      $('html, body').css("overflow-y", "auto")
+      $(this).parents('.school_list').removeClass('area_open')
+    })
+
+    // 모바일 목록보기 버튼 클릭
+    $(document).on("click", ".btn_bottom.btn_show_list", function () {
+      $(this).removeClass("btn_show_list")
+      $(this).addClass('btn_show_map')
+      $(this).children().text('지도 보기')
+
+      $('.result_map .school_list').show()
+    });
+
+    $(document).on("click", ".btn_bottom.btn_show_map", function () {
+      $('.result_map .school_list').hide()
+
+      $(this).removeClass("btn_show_map")
+      $(this).addClass('btn_show_list')
+      $(this).children().text('목록 보기')
+    });
+
+    // 지도 좋아요 눌렀을 때 하단 토글 액티브
+    $('.school_map .school-card-item .btn_like_box input[type=checkbox]').change(function(e) {
+      if(e.target.checked) {
+        $('.alert_message').fadeIn()
+        // 2초뒤에 사라짐
+        setTimeout(()=> {
+          $('.alert_message').fadeOut()
+        }, 2000)
+      } else {
+        $('.alert_message').hide()
+      }
+    })
+
+    // 지도 영역 카드 닫기버튼 클릭 이벤트
+    $('.school_map .school-card-item .btn_close_card').click(function() {
+      $(this).parents('.school-card-item').hide()
+    })
+
+    // 공통 천단위 표기
+      $(".input_number").keyup(function (e) {
+        let value = e.target.value;
+        value = Number(value.replaceAll(",", ""));
+        if (isNaN(value)) {
+          $(this).val(0);
+        } else {
+          const formatValue = value.toLocaleString("ko-KR");
+          $(this).val(formatValue);
+        }
+      });
+
+      // 학비 Range Slider
+      var rangeSlider = $("#slider-range").slider({
+        range: true,
+        min: 5000,
+        max: 100000,
+        values: [5000, 100000],
+        step: 1000,
+        slide: function (event, ui) {
+          $("#range_low").val(ui.values[0].toLocaleString("ko-KR"));
+          $("#range_high").val(ui.values[1].toLocaleString("ko-KR"));
+          if (ui.values[0] != 0 && ui.values[0] > 0) {
+            $("#filter_expenses").addClass("active");
+            $("[name=range_fee]").val(1);
+            return;
+          } else {
+            $("#filter_expenses").removeClass("active");
+            $("[name=range_fee]").val("");
+          }
+
+          if (ui.values[1] != 100000 && ui.values[1] < 100000) {
+            $("#filter_expenses").addClass("active");
+            $("[name=range_fee]").val(1);
+            return;
+          } else {
+            $("#filter_expenses").removeClass("active");
+            $("[name=range_fee]").val("");
+            return;
+          }
+        },
+      });
+
+      $("#range_low").val(
+        $("#slider-range").slider("values", 0).toLocaleString("ko-KR")
+      );
+
+      $("#range_high").val(
+        $("#slider-range").slider("values", 1).toLocaleString("ko-KR")
+      );
+
+      $("#range_low").on("focusout", function (e) {
+        let value = e.target.value;
+        let num_value = Number(value.replaceAll(",", ""));
+        if (num_value < 0) {
+          $("#range_low").val(0);
+        }
+        if (num_value != 0 && num_value > 0) {
+          $("#filter_expenses").addClass("active");
+        }
+
+        // high 보다 큰 값을 입력했을 때 대비
+        if (num_value > $("#slider-range").slider("values", 1)) {
+          $("#range_low").val(
+            $("#slider-range").slider("values", 1).toLocaleString("ko-KR")
+          );
+          $("#slider-range").slider(
+            "values",
+            0,
+            $("#slider-range").slider("values", 1)
+          );
+        } else {
+          $("#slider-range").slider("values", 0, num_value);
+        }
+      });
+
+      $("#range_high").on("focusout", function (e) {
+        let value = e.target.value;
+        let num_value = Number(value.replaceAll(",", ""));
+        if (num_value > 100000) {
+          $("#range_high").val(Number(100000).toLocaleString("ko-KR"));
+        }
+
+        if (num_value != 100000 && num_value < 100000) {
+          $("#filter_expenses").addClass("active");
+        }
+
+        // low 보다 작은 값을 입력했을 때 대비
+        if (num_value < $("#slider-range").slider("values", 0)) {
+          $("#range_high").val(
+            $("#slider-range").slider("values", 0).toLocaleString("ko-KR")
+          );
+          $("#slider-range").slider(
+            "values",
+            1,
+            $("#slider-range").slider("values", 0)
+          );
+        } else {
+          $("#slider-range").slider("values", 1, num_value);
+        }
+      });
+
+      $('.btn_badge_open').hide()
+
+      let areaName = '';
+      let badgeAll = '';
+      let selectedCityList = [];
+      $('.select-area__inner .area_list li').click(function(event) {
+        areaName = event.target.innerText;
+        $('.select-area__inner .area_list li').not($(this)).removeClass('selected')
+        $(this).addClass('selected')
+        $('.area-city_list li').remove()
+        // 클릭한 도시들 리스트 추가
+        let src = 
+        `
+          <li data-all="true"><span>${areaName} 전체</span></li>
+          <li id="city_1"><span>도시명1</span></li>
+          <li id="city_2"><span>도시명2</span></li>
+          <li id="city_3"><span>도시명3</span></li>
+          <li id="city_4"><span>도시명4</span></li>
+          <li id="city_5"><span>도시명5</span></li>
+          <li id="city_6"><span>도시명6</span></li>
+          <li id="city_7"><span>도시명7</span></li>
+          <li id="city_8"><span>도시명8</span></li>
+          <li id="city_9"><span>도시명9</span></li>
+          <li id="city_10"><span>도시명10</span></li>
+        `;
+
+        $('.area-city_list').append(src)
+        // 지역 전체 자동 선택
+        $('.area-city_list li[data-all=true]').addClass('selected')
+
+        // 지역 전체 뱃지 추가
+        badgeAll =
+          `
+              <div id="badge_all" class="selected_badge badge_all">
+                <span class="area">${areaName} 전체</span>
+                <button type="button" class="btn_delete"></button>
+              </div>
+            `
+        $('.selected_area_list .no_result').hide()
+        $('.selected_badge_list .selected_badge').remove()
+        $('.selected_badge_list').append(badgeAll)
+
+
+        $('.area-city_list li').click(function (event) {
+          let selectedCityId = $(this)[0].id.split("_")[1];
+          // 지역 전체를 선택했다면 (지역 전체 빼고 다 선택 해제)
+          if($(this)[0].dataset.all == 'true') {
+            $('.area-city_list li').removeClass('selected')
+            $('.area-city_list li[data-all=true]').addClass('selected')
+
+            $('.selected_badge_list .selected_badge').remove()
+            $('.selected_badge_list').append(badgeAll)
+          } else {
+            
+            // if(selectedCityList.includes($(this)[0].id)) {
+            //   return false;
+            // }
+            
+            // 지역 전체가 아닌 도시를 선택했다면 지역 전체는 해제 시키고 선택한 도시만 선택
+            $('.area-city_list li[data-all=true]').removeClass('selected')
+            $(this).addClass('selected')
+
+            // selectedCityList.push($(this)[0].id);
+
+
+            // 도시 선택시 하단에 뱃지 추가
+            let badge =
+              `
+              <div id="badge_${selectedCityId}" class="selected_badge">
+                <span class="area">${areaName}</span>
+                <span class="arrow"></span>
+                <span class="city">${$(this)[0].innerText}</span>
+                <button type="button" class="btn_delete"></button>
+              </div>
+            `
+            $('.selected_badge.badge_all').remove()
+            $('.selected_badge_list').append(badge)
+
+            if($('.selected_badge_list .selected_badge').length < 3) {
+              $('.btn_badge_open').hide()
+            } else {
+              $('.btn_badge_open').show()
+            }
+          }
+        })
+
+        // 뱃지 삭제 버튼 클릭
+        $(document).on("click", ".selected_badge .btn_delete", function (event) {
+          let selectedBadgeId = $(event.target).parents('.selected_badge')[0].id.split("_")[1];
+          $(event.target).parents('.selected_badge').remove()
+
+          $(`.area-city_list li#city_${selectedBadgeId}`).removeClass('selected')
+
+          if($('.selected_badge').length == 0) {
+            $('.area-city_list li[data-all=true]').addClass('selected')
+            $('.selected_badge_list').append(badgeAll)
+          }
+
+          // selectedCityList.push($(this)[0].id);
+        });
+
+        // 뱃지 초기화 버튼 클릭
+        $(document).on("click", ".selected_area_list .btn_reset", function (event) {
+          $('.select-area__inner .area_list li').removeClass('selected')
+          $('.area-city_list li').remove()
+
+          $('.selected_area_list .no_result').show()
+          $('.selected_badge_list .selected_badge').remove()
+
+          let src = 
+          `
+            <li><span class="select_txt">지역을 선택해 주세요</span></li>
+          `
+
+          $('.area-city_list').append(src)
+        });
+      })
+
+      function clickMobileSelect() {
+        var ww = $(window).width();
+        if (ww > 768) {
+          return;
+        } else {
+          openModal('modal-select-sort')
+        }
+      }
+  </script>
+</body>
+
+</html>

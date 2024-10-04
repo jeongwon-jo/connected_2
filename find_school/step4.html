@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <script type="text/javascript" src="https://dev.connectedu.com/lib/dev/js/jquery.js"></script>
+  <script
+    type="text/javascript">window.PBVAR = { "home_url": "https:\/\/dev.connectedu.com\/", "locale_domain": "pbpress", "ajax_url": "https:\/\/dev.connectedu.com\/ajax", "fileupload_url": "https:\/\/dev.connectedu.com\/fileupload", "filebase_url": "https:\/\/s3.ap-northeast-2.amazonaws.com\/cdn.supremestudyabroadtool.com", "theme_domain": "connectedu", "is_user_logged_in": false, "user_login_url": "https:\/\/dev.connectedu.com\/login" };</script>
+  <script type="text/javascript" src="https://dev.connectedu.com/lib/dev/comp-lib/all-main.js"></script>
+
+  <script type="text/plain" id="pb-crypt-public-key">-----BEGIN PUBLIC KEY-----
+		MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuPYcc3xNRQ49mjAFfQ0V
+		mcW5aXBX7z6r5HMCnOBP8WiXCs3kCJqtrM2o2lXFKZukvsuI7QW7f6AWAmvL1sN/
+		Q5YoKs6V9qjsnLlt/2LAy/odOZ2H+7gNHF0wTEG9qEUmwvNeIEV+GFSQcoHY72I5
+		FLKdRMJeWoF7N8BAWGl99+PPXyscviH8jyGqNUGya+Dj2mW7z36FZ4mIE7l7hry0
+		PXfpLLOR6eMtTD8qcmXia2AugJAd0PzVWax8dG0FCH4OGkjsXaI+u+d3C5AA5c2V
+		KfsBT3VxYaqnK+BzTGjIQ5lRbGrkdMy9ujKVGr6dkykrurY5pXydbaKxLSLbKcy0
+		CwIDAQAB
+		-----END PUBLIC KEY-----
+	</script>
+
+  <script type="text/javascript" src="https://dev.connectedu.com/_pblang.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://dev.connectedu.com/_page_builder_compiled.css">
+  <link rel="stylesheet" type="text/css" href="https://dev.connectedu.com/lib/dev/css/page-builder/common.css?v=2">
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvHXb0hXEJwqfcSQlM7KMxqzrxCmazlPM&libraries=geometry,places"
+    defer></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    viewport-fit=cover' />
+  <link rel="apple-touch-icon" sizes="57x57"
+    href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60"
+    href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72"
+    href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76"
+    href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114"
+    href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120"
+    href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144"
+    href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152"
+    href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180"
+    href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"
+    href="https://dev.connectedu.com/themes/connected/img/icon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="https://dev.connectedu.com/themes/connected/img/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96"
+    href="https://dev.connectedu.com/themes/connected/img/icon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16"
+    href="https://dev.connectedu.com/themes/connected/img/icon/favicon-16x16.png">
+  <link rel="stylesheet" type="text/css"
+    href="https://dev.connectedu.com/themes/connected/lib/dev/css/pb-main.css?v=1.0.0_debug_1Sabk">
+  <script type="text/javascript"
+    src="https://dev.connectedu.com/themes/connected/lib/dev/comp-lib/all.js?v=1.0.0_debug_1Sabk"></script>
+  <script type="text/javascript" src="https://dev.connectedu.com/themes/connected/lib/dev/js/pb-dev.js"></script>
+  <title>커넥티드</title>
+  <!-- jQuery CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <!-- DateTimePicker -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- Star -->
+  <link rel="stylesheet" href="../js/star/star-rating-svg.css">
+  <script src="../js/star/jquery.star-rating-svg.js"></script>
+  <!-- AOS CSS & JS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- NiceSelect -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <!-- gsap & TWEENMAX -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+
+  <!-- Custom CSS & JS -->
+  <link rel="stylesheet" href="../css/common2.css">
+  <script src="../js/common2.js" defer></script>
+  <meta name="title" content="커넥티드">
+  <meta name="keywords" content="">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="Korean">
+
+  <!-- Search Engine -->
+  <meta name="description" content="커넥티드">
+  <meta name="image" content="https://dev.connectedu.com/themes/connected/img/og.jpg">
+  <!-- Schema.org for Google -->
+  <meta itemprop="name" content="커넥티드">
+  <meta itemprop="description" content="커넥티드">
+
+  <meta itemprop="image" content="https://dev.connectedu.com/themes/connected/img/og.jpg">
+  <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+  <meta property="og:title" content="커넥티드">
+  <meta property="og:description" content="커넥티드">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.connectedu.com/themes/connected/img/og_new.png">
+  <meta property="og:url" content="https://dev.connectedu.com/">
+  <meta property="og:site_name" content="커넥티드">
+  <meta name="facebook-domain-verification" content="ceg8hozu78orpcw7kul1sdm6812f9u" />
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WJR8W6Q');</script>
+  <!-- End Google Tag Manager -->
+  <!-- naver-site-verification -->
+  <meta name="naver-site-verification" content="0484b9a899fa8076d2db02d74a9238e6f52dfea2" />
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '192964157157918');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=192964157157918&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!-- Channel Plugin Scripts -->
+  <script>
+    (function () {
+      var w = window;
+      if (w.ChannelIO) {
+        return (window.console.error || window.console.log || function () { })('ChannelIO script included twice.');
+      }
+      var ch = function () {
+        ch.c(arguments);
+      };
+      ch.q = [];
+      ch.c = function (args) {
+        ch.q.push(args);
+      };
+      w.ChannelIO = ch;
+      function l() {
+        if (w.ChannelIOInitialized) {
+          return;
+        }
+        w.ChannelIOInitialized = true;
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+        s.charset = 'UTF-8';
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+      }
+      if (document.readyState === 'complete') {
+        l();
+      } else if (window.attachEvent) {
+        window.attachEvent('onload', l);
+      } else {
+        window.addEventListener('DOMContentLoaded', l, false);
+        window.addEventListener('load', l, false);
+      }
+    })();
+    /*
+    ChannelIO('boot', {
+      "pluginKey": "378cf6f4-3169-4a37-a85e-2e8b36cdab6a"
+    });
+    */
+  </script>
+  <!-- End Channel Plugin -->
+
+  <!-- nam [s] -->
+  <style>
+    #pb-pc-submenu-list li:first-child {
+      display: none;
+    }
+
+    #pb-mobile-menu-panel>.menu-list>li:last-child {
+      display: none;
+    }
+
+    #pb-pc-submenu-list>li.locale-link:hover .submenu-group,
+    #pb-pc-submenu-list>li>.submenu-group>.submenu-list>li.change-locale-menu,
+    #pb-pc-submenu-list>li>.submenu-group>.submenu-list>li.change-locale-menu li {
+      display: block !important;
+      opacity: 1;
+    }
+
+    @media screen and (max-width: 767px) {
+      #pb-mobile-menu-panel {
+        padding-bottom: 140px;
+      }
+
+      .locale-selector.mobile {
+        width: 120px;
+        margin: 0 auto;
+      }
+    }
+  </style>
+  <!-- nam [e] -->
+
+</head>
+
+<body class="" oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+
+  <div id="wrap" class="no_layout">
+    <header>
+      <div class="header__inner">
+        <div class="hd__top">
+          <div class="hd-search">
+            <a href="/" class="logo">
+              <img src="../img/common/logo.png" alt="커넥티드 로고">
+            </a>
+            <form action="" class="form_hd-search">
+              <fieldset>
+                <div class="search">
+                  <input type="text" placeholder="검색어를 입력하세요.">
+                  <button type="button" class="btn_search"></button>
+                </div>
+              </fieldset>
+            </form>
+            <button type="button" class="mo-icon_menu"></button>
+          </div>
+          <div class="hd-language">
+            <ul class="hd-navigation">
+              <li>
+                <div class="setting-lang">
+                  <span class="current">KOR</span>
+                  <button type="button" class="btn_open"></button>
+                  <ul class="lang_list">
+                    <li>KOR</li>
+                    <li>ENG</li>
+                    <li>CN</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="hd__bottom">
+          <div class="hd_category_gnb">
+            <div class="category">
+              <div class="category_icon">
+                <span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <p>전체 카테고리</p>
+              <button type="button" class="btn_open"></button>
+            </div>
+            <nav id="gnb">
+              <ul>
+                <!-- 해당 메뉴 접근시 li에 active 클래스 추가 -->
+                <li><a href="./school/school_home.html">학교</a></li>
+                <li><a href="./school/online_home.html">온라인학교</a></li>
+                <li><a href="./activity/short_home.html">단기활동</a></li>
+                <li><a href="./activity/online_home.html">온라인 단기활동</a></li>
+                <li><a href="./magazine/list.html">매거진</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="hd_login">
+            <!-- 비로그인 환경 -->
+            <!-- <a href="/login.html" class="btn_login">로그인</a>
+	                <a href="#" class="btn-smType btn-round btn_signup">회원가입</a> -->
+            <!-- 로그인 환경 -->
+            <div class="hd_mypage">
+              <button type="button" class="btn-smType btn-round btn_mypage">마이페이지</button>
+              <ul class="mypage_list">
+                <li><a href="#" class="my_info">계정 정보</a></li>
+                <li><a href="#" class="my_noti">알림</a></li>
+                <li><a href="#" class="my_like">관심리스트</a></li>
+                <li><a href="#" class="my_portfolio">포트폴리오</a></li>
+                <li><a href="#" class="my_payment">결제내역</a></li>
+                <li><a href="#" class="my_aplc">지원서 리스트</a></li>
+                <li><a href="#" class="logout">로그아웃</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 전체 카테고리 -->
+      <div id="hd_category">
+        <div class="category__inner">
+          <ul class="category">
+            <li>
+              <span class="category_nm">학교</span>
+              <ul class="category_sub">
+                <li>
+                  <a href="#" class="category_nm">미국</a>
+                  <ul class="category_sub">
+                    <li><a href="#" class="category_nm">미국</a></li>
+                    <li><a href="#" class="category_nm">영국</a></li>
+                    <li><a href="#" class="category_nm">캐나다</a></li>
+                  </ul>
+                </li>
+                <li><a href="#" class="category_nm">영국</a></li>
+                <li><a href="#" class="category_nm">캐나다</a></li>
+              </ul>
+            </li>
+            <li><span class="category_nm">온라인학교</span>
+              <ul class="category_sub">
+                <li>
+                  <a href="#" class="category_nm">미국1</a>
+                  <ul class="category_sub">
+                    <li><a href="#" class="category_nm">미국</a></li>
+                    <li><a href="#" class="category_nm">영국</a></li>
+                    <li><a href="#" class="category_nm">캐나다</a></li>
+                  </ul>
+                </li>
+                <li><a href="#" class="category_nm">영국</a></li>
+                <li><a href="#" class="category_nm">캐나다</a></li>
+              </ul>
+            </li>
+            <li><span class="category_nm">단기활동</span>
+              <ul class="category_sub">
+                <li>
+                  <a href="#" class="category_nm">미국2</a>
+                  <ul class="category_sub">
+                    <li><a href="#" class="category_nm">미국</a></li>
+                    <li><a href="#" class="category_nm">영국</a></li>
+                    <li><a href="#" class="category_nm">캐나다</a></li>
+                  </ul>
+                </li>
+                <li><a href="#" class="category_nm">영국</a></li>
+                <li><a href="#" class="category_nm">캐나다</a></li>
+              </ul>
+            </li>
+            <li><span class="category_nm">온라인 단기활동</span></li>
+            <li><span class="category_nm">매거진</span></li>
+          </ul>
+        </div>
+      </div>
+      <!-- 모바일 햄버거 버튼 클릭 메뉴 -->
+      <div class="mobile_gnb">
+        <div class="mobile_gnb__inner">
+          <div class="mobile_gnb__header">
+            <div class="logo">
+              <img src="./img/common/logo.png" alt="로고">
+            </div>
+            <button type="button" class="btn_close"></button>
+          </div>
+          <div class="mobile_gnb__content">
+            <!-- 로그인 전 로그인 유도 -->
+            <div class="m_gnb-login">
+              <span>
+                로그인 하시고<br>
+                더 자세한 정보를 확인하세요!
+              </span>
+              <a href="/login.html" class="btn_login">로그인</a>
+            </div>
+            <ul class="m-gnb">
+              <!-- 로그인 후 마이페이지 노출 -->
+              <li>
+                <button type="button" class="a_menu mypage">마이페이지</button>
+              </li>
+              <!-- 1뎁스 -->
+              <li>
+                <button type="button" class="a_menu a_gnb">학교</button>
+                <!-- 2뎁스 -->
+                <div class="mobile_submenu">
+                  <div class="gnb_submenu__inner">
+                    <div class="gnb_submenu__hd">
+                      <button type="button" class="btn_revert"></button><a href="./school/school_home.html">학교 홈</a>
+                    </div>
+                    <ul class="gnb_submenu__menu">
+                      <li>
+                        <button type="button" class="a_menu a_gnb">미국</button>
+                        <!-- 3뎁스 -->
+                        <div class="mobile_submenu">
+                          <div class="gnb_submenu__inner">
+                            <div class="gnb_submenu__hd">
+                              <button type="button" class="btn_revert"></button><a href="" class="menu_nm"></a>
+                            </div>
+                            <ul class="gnb_submenu__menu">
+                              <li><button type="button" class="a_menu a_gnb">미국1</button></li>
+                              <li><button type="button" class="a_menu a_gnb">미국2</button></li>
+                              <li><button type="button" class="a_menu a_gnb">미국3</button></li>
+                              <li><button type="button" class="a_menu a_gnb">미국4</button></li>
+                              <li><button type="button" class="a_menu a_gnb">미국5</button></li>
+                              <li><button type="button" class="a_menu a_gnb">미국6</button></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <button type="button" class="a_menu a_gnb">영국</button>
+                        <!-- 3뎁스 -->
+                        <div class="mobile_submenu">
+                          <div class="gnb_submenu__inner">
+                            <div class="gnb_submenu__hd">
+                              <button type="button" class="btn_revert"></button><a href="" class="menu_nm"></a>
+                            </div>
+                            <ul class="gnb_submenu__menu">
+                              <li><button type="button" class="a_menu a_gnb">영국1</button></li>
+                              <li><button type="button" class="a_menu a_gnb">영국2</button></li>
+                              <li><button type="button" class="a_menu a_gnb">영국3</button></li>
+                              <li><button type="button" class="a_menu a_gnb">영국4</button></li>
+                              <li><button type="button" class="a_menu a_gnb">영국5</button></li>
+                              <li><button type="button" class="a_menu a_gnb">영국6</button></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                      <li><button type="button" class="a_menu a_gnb">캐나다</button></li>
+                      <li><button type="button" class="a_menu a_gnb">미국</button></li>
+                      <li><button type="button" class="a_menu a_gnb">영국</button></li>
+                      <li><button type="button" class="a_menu a_gnb">캐나다</button></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <button type="button" data-key="gnb2" data-level="1" class="a_menu a_gnb">온라인학교</button>
+              </li>
+              <li>
+                <button type="button" data-key="gnb3" data-level="1" class="a_menu a_gnb">단기활동</button>
+              </li>
+              <li>
+                <button type="button" data-key="gnb4" data-level="1" class="a_menu a_gnb">온라인 단기활동</button>
+              </li>
+              <li>
+                <button type="button" data-key="gnb5" data-level="1" class="a_menu a_gnb">매거진</button>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile_gnb__mypage">
+            <div class="gnb_mypage__inner">
+              <button type="button" class="btn_revert">전체</button>
+              <ul class="mypage__menu">
+                <li><a href="#" class="my_info">계정 정보</a></li>
+                <li><a href="#" class="my_noti">알림</a></li>
+                <li><a href="#" class="my_like">관심리스트</a></li>
+                <li><a href="#" class="my_portfolio">포트폴리오</a></li>
+                <li><a href="#" class="my_payment">결제내역</a></li>
+                <li><a href="#" class="my_aplc">지원서 리스트</a></li>
+                <li><a href="#" class="logout">로그아웃</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <link rel="stylesheet" href="/html/css/fonts.css?20231016100026">
+    <link rel="stylesheet" href="/html/css/style.css?20231016100026">
+    <script src="/html/js/js.js?20231016100026"></script>
+
+    <main>
+      <div class="find-school__inner step">
+        <div class="find-school_step">
+          <div class="step__inner">
+            <div class="quest_info">
+              <span class="step">STEP 04</span>
+              <h3>학생은 몇 학년부터 유학을 시작하실 계획이신가요?</h3>
+            </div>
+            <div class="quest_content">
+              <div class="common_info">
+                총 X,XXX개 학교가 검색됨
+              </div>
+              <div class="mobile_scroll_wrap">
+                <div class="find-school_select_list flex flex_3">
+                  <div class="radio--typeA">
+                    <label for="chk1">
+                      <input type="radio" id="chk1" name="radio_A"><em>Kindergarten</em>
+                    </label>
+                  </div>
+                  <div class="radio--typeA">
+                    <label for="chk2">
+                      <input type="radio" id="chk2" name="radio_A"><em>1학년</em>
+                    </label>
+                  </div>
+                  <div class="radio--typeA">
+                    <label for="chk3">
+                      <input type="radio" id="chk3" name="radio_A"><em>2학년</em>
+                    </label>
+                  </div>
+                  <div class="radio--typeA">
+                    <label for="chk4">
+                      <input type="radio" id="chk4" name="radio_A"><em>3학년</em>
+                    </label>
+                  </div>
+                  <div class="radio--typeA">
+                    <label for="chk5">
+                      <input type="radio" id="chk5" name="radio_A"><em>4학년</em>
+                    </label>
+                  </div>
+                  <div class="radio--typeA">
+                    <label for="chk6">
+                      <input type="radio" id="chk6" name="radio_A"><em>5학년</em>
+                    </label>
+                  </div>
+                  <div class="radio--typeA">
+                    <label for="chk7">
+                      <input type="radio" id="chk7" name="radio_A"><em>6학년</em>
+                    </label>
+                  </div>
+                  <div class="radio--typeA">
+                    <label for="chk8">
+                      <input type="radio" id="chk8" name="radio_A"><em>7학년</em>
+                    </label>
+                  </div>
+                  <div class="radio--typeA">
+                    <label for="chk9">
+                      <input type="radio" id="chk9" name="radio_A"><em>8학년</em>
+                    </label>
+                  </div>
+                  <div class="radio--typeA">
+                    <label for="chk10">
+                      <input type="radio" id="chk10" name="radio_A"><em>9학년</em>
+                    </label>
+                  </div>
+                  <div class="radio--typeA">
+                    <label for="chk11">
+                      <input type="radio" id="chk11" name="radio_A"><em>10학년</em>
+                    </label>
+                  </div>
+                  <div class="radio--typeA">
+                    <label for="chk12">
+                      <input type="radio" id="chk12" name="radio_A"><em>11학년</em>
+                    </label>
+                  </div>
+                  <div class="radio--typeA">
+                    <label for="chk13">
+                      <input type="radio" id="chk13" name="radio_A"><em>12학년</em>
+                    </label>
+                  </div>
+                  <div class="radio--typeA">
+                    <label for="chk14">
+                      <input type="radio" id="chk14" name="radio_A"><em>13학년</em>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="tip_box">
+                <div class="tit">
+                  <span>TIP!</span>
+                </div>
+                <div class="cnts">
+                  <p>
+                    위에 나열된 학년은 [국가] 기준 학년입니다. 몇 학년으로 진학할지 모르시겠다면 <button class="btn_open_modal" onclick="openModal('modal-academic-country')">국가별 교육제도</button>를 확인하시어 유학 시작 학년을 선택해 주세요.</p>
+                </div>
+              </div>
+            </div>
+            <div class="quest_move_step">
+              <button id="btnPrev" class="move_btn move_prev">이전</button>
+              <button id="btnNext" class="move_btn move_next" disabled>다음</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+    <div class="float_consult">
+      <a href="#" class="btn_consult"></a>
+    </div>
+    <!-- 국가별 학제 모달 시작 -->
+    <div id="modal-academic-country" class="modal modal_academic_country">
+      <div class="modal__inner">
+        <div class="modal__close">
+          <button type="button" class="btn_modal-close" onclick="closeModal('modal-academic-country')"></button>
+        </div>
+        <div class="modal__header">
+          <p>국가별 교육제도</p>
+        </div>
+        <div class="modal__content">
+          <div class="academic_country_tabs">
+            <div class="tabs_wrap">
+              <ul class="tabs">
+                <li class="tabs__link on" data-tab="tab-1">미국</li>
+                <li class="tabs__link" data-tab="tab-2">캐나다</li>
+                <li class="tabs__link" data-tab="tab-3">영국</li>
+                <li class="tabs__link" data-tab="tab-4">호주</li>
+              </ul>
+            </div>
+            <div id="tab-1" class="academic-tab__content on">
+              <div class="academic-tbl_flex_box">
+                <div class="tbl_academic">
+                  <div class="title">
+                    <h3>한국</h3>
+                  </div>
+                  <table>
+                    <colgroup>
+                      <col style="width:136px">
+                      <col style="width:136px">
+                      <col style="width:136px">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>교육과정</th>
+                        <th>학년</th>
+                        <th>만나이</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>유치원</td>
+                        <td>-</td>
+                        <td>5~6세</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="6">초등학교</td>
+                        <td>1</td>
+                        <td>6~7세</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>6~8세</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>7~9세</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>8~10세</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>9~11세</td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>10~12세</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="3">중학교</td>
+                        <td>1</td>
+                        <td>11~13세</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>12~14세</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>13~15세</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="3">고등학교</td>
+                        <td>1</td>
+                        <td>14~16세</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>15~17세</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>16~18세</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="tbl_academic">
+                  <div class="title">
+                    <h3>미국</h3>
+                  </div>
+                  <table>
+                    <colgroup>
+                      <col style="width:136px">
+                      <col style="width:136px">
+                      <col style="width:136px">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>교육과정</th>
+                        <th>학년</th>
+                        <th>만나이</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Kindergarten</td>
+                        <td>Kindergarten</td>
+                        <td>5~6세</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="6">Primary School</td>
+                        <td>Grade1</td>
+                        <td>6~7세</td>
+                      </tr>
+                      <tr>
+                        <td>Grade2</td>
+                        <td>6~8세</td>
+                      </tr>
+                      <tr>
+                        <td>Grade3</td>
+                        <td>7~9세</td>
+                      </tr>
+                      <tr>
+                        <td>Grade4</td>
+                        <td>8~10세</td>
+                      </tr>
+                      <tr>
+                        <td>Grade5</td>
+                        <td>9~11세</td>
+                      </tr>
+                      <tr>
+                        <td>Grade6</td>
+                        <td>10~12세</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="3">Middle School</td>
+                        <td>Grade7</td>
+                        <td>11~13세</td>
+                      </tr>
+                      <tr>
+                        <td>Grade8</td>
+                        <td>12~14세</td>
+                      </tr>
+                      <tr>
+                        <td>Grade9</td>
+                        <td>13~15세</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="3">High School</td>
+                        <td>Grade10</td>
+                        <td>14~16세</td>
+                      </tr>
+                      <tr>
+                        <td>Grade11</td>
+                        <td>15~17세</td>
+                      </tr>
+                      <tr>
+                        <td>Grade12</td>
+                        <td>16~18세</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="academic_info">
+                <p>미국의 교육제도는 주별로 다르며, 가장 일반적으로는 우리나라와 동일한 6-3-3제를 시행하고 있어요.</p>
+              </div>
+            </div>
+            <div id="tab-2" class="academic-tab__content">
+              <div class="academic-tbl_flex_box">
+                <div class="tbl_academic">
+                  <div class="title">
+                    <h3>한국</h3>
+                  </div>
+                  <table>
+                    <colgroup>
+                      <col style="width:136px">
+                      <col style="width:136px">
+                      <col style="width:136px">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>교육과정</th>
+                        <th>학년</th>
+                        <th>만나이</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>유치원</td>
+                        <td>-</td>
+                        <td>5~6세</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="6">초등학교</td>
+                        <td>1</td>
+                        <td>6세</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>7세</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>8세</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>9세</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>10세</td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>11세</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="3">중학교</td>
+                        <td>1</td>
+                        <td>12세</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>13세</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>14세</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="3">고등학교</td>
+                        <td>1</td>
+                        <td>15세</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>16세</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>17세</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="tbl_academic">
+                  <div class="title">
+                    <h3>캐나다</h3>
+                  </div>
+                  <table>
+                    <colgroup>
+                      <col style="width:136px">
+                      <col style="width:136px">
+                      <col style="width:136px">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>교육과정</th>
+                        <th>학년</th>
+                        <th>만나이</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Kindergarten</td>
+                        <td>Kindergarten</td>
+                        <td>5~6세</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="6">Elementary School</td>
+                        <td>Grade1</td>
+                        <td>6세</td>
+                      </tr>
+                      <tr>
+                        <td>Grade2</td>
+                        <td>7세</td>
+                      </tr>
+                      <tr>
+                        <td>Grade3</td>
+                        <td>8세</td>
+                      </tr>
+                      <tr>
+                        <td>Grade4</td>
+                        <td>9세</td>
+                      </tr>
+                      <tr>
+                        <td>Grade5</td>
+                        <td>10세</td>
+                      </tr>
+                      <tr>
+                        <td>Grade6</td>
+                        <td>11세</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="6">Secondary School</td>
+                        <td>Grade7</td>
+                        <td>12세</td>
+                      </tr>
+                      <tr>
+                        <td>Grade8</td>
+                        <td>13세</td>
+                      </tr>
+                      <tr>
+                        <td>Grade9</td>
+                        <td>14세</td>
+                      </tr>
+                      <tr>
+                        <td>Grade10</td>
+                        <td>15세</td>
+                      </tr>
+                      <tr>
+                        <td>Grade11</td>
+                        <td>16세</td>
+                      </tr>
+                      <tr>
+                        <td>Grade12</td>
+                        <td>17세</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="academic_info">
+                <p>Elemantary School이 Grade8까지, Secondary School이 Grade9부터 시작되는 학교도 있어요.</p>
+              </div>
+            </div>
+            <div id="tab-3" class="academic-tab__content">
+              <div class="academic-tbl_flex_box">
+                <div class="tbl_academic">
+                  <div class="title">
+                    <h3>한국</h3>
+                  </div>
+                  <table>
+                    <colgroup>
+                      <col style="width:136px">
+                      <col style="width:136px">
+                      <col style="width:136px">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>교육과정</th>
+                        <th>학년</th>
+                        <th>만나이</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td rowspan="2">유치원</td>
+                        <td>-</td>
+                        <td rowspan="2">6세 이하</td>
+                      </tr>
+                      <tr>
+                        <td>-</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="6">초등학교</td>
+                        <td>1</td>
+                        <td>6~7세</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>7~8세</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>8~9세</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>9~10세</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>10~11세</td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>11~12세</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="3">중학교</td>
+                        <td>1</td>
+                        <td>12~13세</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>13~14세</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>14~15세</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="4">고등학교</td>
+                        <td>1</td>
+                        <td>15~16세</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>16~17세</td>
+                      </tr>
+                      <tr>
+                        <td style="height: 88px;">3</td>
+                        <td style="height: 88px;">17~18세</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="tbl_academic">
+                  <div class="title">
+                    <h3>영국</h3>
+                  </div>
+                  <table>
+                    <colgroup>
+                      <col style="width:136px">
+                      <col style="width:136px">
+                      <col style="width:136px">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>교육과정</th>
+                        <th>학년</th>
+                        <th>만나이</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Nursery</td>
+                        <td>Nursery</td>
+                        <td>3~4세</td>
+                      </tr>
+                      <tr>
+                        <td>Reception</td>
+                        <td>Reception</td>
+                        <td>4~5세</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="6">Elementary School</td>
+                        <td>Year1</td>
+                        <td>5~6세</td>
+                      </tr>
+                      <tr>
+                        <td>Year2</td>
+                        <td>6~7세</td>
+                      </tr>
+                      <tr>
+                        <td>Year3</td>
+                        <td>7~8세</td>
+                      </tr>
+                      <tr>
+                        <td>Year4</td>
+                        <td>8~9세</td>
+                      </tr>
+                      <tr>
+                        <td>Year5</td>
+                        <td>9~10세</td>
+                      </tr>
+                      <tr>
+                        <td>Year6</td>
+                        <td>10~11세</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="5">Secondary School</td>
+                        <td>Year7</td>
+                        <td>11~12세</td>
+                      </tr>
+                      <tr>
+                        <td>Year8</td>
+                        <td>12~13세</td>
+                      </tr>
+                      <tr>
+                        <td>Year9</td>
+                        <td>13~14세</td>
+                      </tr>
+                      <tr>
+                        <td>Year10</td>
+                        <td>14~15세</td>
+                      </tr>
+                      <tr>
+                        <td>Year11</td>
+                        <td>15~16세</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="4">Sixth-Form</td>
+                        <td>Year12</td>
+                        <td>15~16세</td>
+                      </tr>
+                      <tr>
+                        <td>Year13</td>
+                        <td>16~17세</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="academic_info">
+                <p>영국은 한국보다 1년 빠르게 초등학교에 입학하기 때문에 13학년까지 있어요.</p>
+              </div>
+            </div>
+            <div id="tab-4" class="academic-tab__content">
+              <div class="academic-tbl_flex_box">
+                <div class="tbl_academic">
+                  <div class="title">
+                    <h3>한국</h3>
+                  </div>
+                  <table>
+                    <colgroup>
+                      <col style="width:136px">
+                      <col style="width:136px">
+                      <col style="width:136px">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>교육과정</th>
+                        <th>학년</th>
+                        <th>만나이</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="height: 88px;">유치원</td>
+                        <td style="height: 88px;">-</td>
+                        <td style="height: 88px;">5~6세</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="6">초등학교</td>
+                        <td>1</td>
+                        <td>7세</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>8세</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>9세</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>10세</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>11세</td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>12세</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="3">중학교</td>
+                        <td>1</td>
+                        <td>13세</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>14세</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>15세</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="4">고등학교</td>
+                        <td>1</td>
+                        <td>16세</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>17세</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>18세</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="tbl_academic">
+                  <div class="title">
+                    <h3>호주</h3>
+                  </div>
+                  <table>
+                    <colgroup>
+                      <col style="width:136px">
+                      <col style="width:136px">
+                      <col style="width:136px">
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>교육과정</th>
+                        <th>학년</th>
+                        <th>만나이</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Kindergarten</td>
+                        <td>Kindergarten</td>
+                        <td>4~5세</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="6">Primary School</td>
+                        <td>Grade1</td>
+                        <td>6세</td>
+                      </tr>
+                      <tr>
+                        <td>Grade2</td>
+                        <td>7세</td>
+                      </tr>
+                      <tr>
+                        <td>Grade3</td>
+                        <td>8세</td>
+                      </tr>
+                      <tr>
+                        <td>Grade4</td>
+                        <td>9세</td>
+                      </tr>
+                      <tr>
+                        <td>Grade5</td>
+                        <td>10세</td>
+                      </tr>
+                      <tr>
+                        <td>Grade6</td>
+                        <td>11세</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="4">Junior High School</td>
+                        <td>Grade7</td>
+                        <td>12세</td>
+                      </tr>
+                      <tr>
+                        <td>Grade8</td>
+                        <td>13세</td>
+                      </tr>
+                      <tr>
+                        <td>Grade9</td>
+                        <td>14세</td>
+                      </tr>
+                      <tr>
+                        <td>Grade10</td>
+                        <td>15세</td>
+                      </tr>
+                      <tr>
+                        <td rowspan="4">Senior High School</td>
+                        <td>Grade11</td>
+                        <td>16세</td>
+                      </tr>
+                      <tr>
+                        <td style="height: 88px;">Grade12</td>
+                        <td style="height: 88px;">17세</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="academic_info">
+                <p>호주의 의무교육은 10학년까지이며, 10학년을 마친 학생 중 약 50%정도가 11학년에 진학해요.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal__btn">
+          <button type="button" class="btn_cancel" onclick="closeModal('modal-academic-country')">취소</button>
+          <button type="button" class="btn_confirm" onclick="closeModal('modal-academic-country')">확인</button>
+        </div>
+      </div>
+    </div>
+    <!-- 국가별 학제 모달 끝 -->
+  </div>
+  <script>
+    $(function () {
+      $('ul.tabs li.tabs__link').click(function () {
+        var tab_id = $(this).attr('data-tab');
+
+        $('ul.tabs li.tabs__link').removeClass('on');
+        $('.academic-tab__content').removeClass('on');
+
+        $(this).addClass('on');
+        $("#" + tab_id).addClass('on');
+      })
+
+      $('input[name=radio_A]').change(function () {
+        $('#btnNext').removeAttr("disabled");
+      })
+    })
+  </script>
+</body>
+
+</html>

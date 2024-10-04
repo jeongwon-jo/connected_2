@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800&display=swap');
+@font-face {
+  font-family: 'Fairytale_ddobak';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_03@1.0/Fairytale_ddobak.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,50 @@
+@charset "UTF-8";/* 로그인 */
+.login_container { width: 100%; max-width: 920px; margin: 0 auto; background-color: var(--color-white); min-height: 100vh; display: flex; align-items: center; } 
+.login__inner { width: 100%; max-width: 460px; margin: 0 auto; padding: 50px 0; } 
+.login__header { text-align: center; margin-bottom: 50px; } 
+.login__header>h1 { font-size: 30px; font-weight: 700; margin: 35px 0 25px; } 
+.login__header>h3 { font-size: 25px; line-height: 35px; font-weight: normal; } 
+.login__header>h3 b { font-weight: 500; } 
+.tit-space { text-align: center; font-size: 14px; font-weight: 500; color: var(--color-gray06); position: relative; } 
+.tit-space:before { content: ''; display: inline-block; width: 26%; height: 1px; position: absolute; left: 0; top: 50%; transform: translateY(-50%); background-color: #D9D9D9; } 
+.tit-space:after { content: ''; display: inline-block; width: 26%; height: 1px; position: absolute; right: 0; top: 50%; transform: translateY(-50%); background-color: #D9D9D9; } 
+.login__sns ul.sns_list { margin: 32px auto 40px; display: flex; justify-content: center; align-items: center; gap: 48px; } 
+.login__sns ul.sns_list li { display: inline-block; width: 50px; height: 50px; } 
+.login__sns ul.sns_list li a { display: inline-block; width: 100%; height: 100%; } 
+.login__sns ul.sns_list li a.login_kakao { background: url(../img/login/icon_kakao.svg) no-repeat center center / contain; } 
+.login__sns ul.sns_list li a.login_naver { background: url(../img/login/icon_naver.svg) no-repeat center center / contain; } 
+.login__sns ul.sns_list li a.login_facebook { background: url(../img/login/icon_facebook.svg) no-repeat center center / contain; } 
+.form_login { margin-top: 32px; } 
+.form_login .input { margin-bottom: 24px; } 
+.form_login .input:nth-child(2) { margin-bottom: 0; } 
+.form_login input:focus { border: 1px solid var(--color-main); } 
+.form_login .input_password { position: relative; } 
+.form_login .input_password .btn_eye { position: absolute; display: inline-block; width: 24px; height: 24px; top: 12px; /* transform: translateY(-50%); */ right: 13px; background: url(../img/login/icon_eye.svg) no-repeat center center / contain; } 
+.form_login .input_password .btn_eye.hide { display:inline-block !important; background: url(../img/login/icon_eye_off.svg) no-repeat center center / contain; } 
+.form_login .find-pw { display: flex; justify-content: flex-end; align-items: center; margin-top: 10px; margin-bottom: 36px; } 
+.form_login .btn_login { background-color: var(--color-main-over); } 
+.suggest_signup { display: flex; justify-content: center; align-items: center; margin-top: 32px; font-size: 14px; font-weight: 300; color: var(--color-gray04); } 
+.suggest_signup .btn_signup { color: var(--color-main); margin-left: 8px; font-weight: 500; } 
+.suggest_signup .btn_signup:hover, .suggest_signup .btn_signup:focus { color: var(--color-main); } 
+/* 비밀번호 찾기 모달 */
+.modal_find_pw .modal__inner { max-width: 500px; min-height: 474px; padding: 40px 20px; } 
+.modal_find_pw .modal__header { border-bottom: none; } 
+.modal_find_pw .find-pw_info { font-size: 14px; font-weight: 300; text-align: center; margin-bottom: 40px; } 
+.modal_find_pw .find_sns { width: 100%; background-color: var(--color-gray01); display: flex; justify-content: center; align-items: center; height: 56px; margin-top: 20px; text-align: center; } 
+.modal_find_pw .find_sns p { font-size: 12px; text-align: center; font-weight: 400; line-height: 18px; color: var(--color-gray04); } 
+.modal_find_pw .btn-modal.btn_cancel { background-color: var(--color-soft-yellow); color: var(--color-main); border-color: var(--color-soft-yellow); } 
+
+@media screen and (max-width:768px) {
+	.login__inner {padding: 40px 16px;padding-bottom: 107px; } 
+	.login__header {margin-bottom: 32px; } 
+	.login__header>h1 {font-size: 24px;font-weight: 700;margin: 25px 0 10px; } 
+	.login__header>h3 {font-size: 16px;line-height: 26px;color: #505050; } 
+	.tit-space:before {width: 27%; } 
+	.tit-space:after {width: 27%; } 
+	.login__sns ul.sns_list {margin: 24px auto 24px;gap: 24px; } 
+	.form_login {margin-top: 24px; } 
+	.form_login .find-pw {margin-bottom: 18px; } 
+	.suggest_signup {margin-top: 24px; } 
+	.modal_find_pw .modal__inner {padding: 20px; } 
+	.modal_find_pw .find-pw_info {line-height: 20px; } 
+}
